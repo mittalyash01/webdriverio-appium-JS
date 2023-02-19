@@ -1,4 +1,3 @@
-import ListScreen from '../../screenobjects/ios/list.screen';
 import ItemScreen from '../../screenobjects/ios/sample-ios.screen';
 
 describe('Todo Item', () => {
