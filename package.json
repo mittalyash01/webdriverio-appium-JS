@@ -4,7 +4,9 @@
   "description": "Appium tests using WebdriverIO",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:sauce:android": "wdio config/saucelabs.android.conf.js",
+    "test:sauce:ios": "wdio config/saucelabs.ios.conf.js"
   },
   "keywords": [
     "webdriverio",
@@ -26,6 +28,7 @@
     "@wdio/browserstack-service": "^7.16.10",
     "@wdio/local-runner": "^7.14.1",
     "@wdio/mocha-framework": "^7.14.1",
+    "@wdio/sauce-service": "^8.3.10",
     "@wdio/spec-reporter": "^7.14.1",
     "eslint": "7.32.0",
     "eslint-plugin-wdio": "^7.4.2"
