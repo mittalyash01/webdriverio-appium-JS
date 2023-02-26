@@ -12,7 +12,7 @@ jobs:
         - name: Install
           run: npm install
         - name: Test
-          run: npx wdio config/wdio.android.bs.conf.js --spec test/specs/android/add-note-screen.spec.js
+          run: npm run test:sauce:android -- --spec=test/specs/login.spec.js
         - uses: actions/upload-artifact@v1
           if: failure()
           with:
