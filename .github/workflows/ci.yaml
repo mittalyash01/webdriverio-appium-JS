@@ -12,7 +12,8 @@ jobs:
         - name: Install
           run: npm install
         - name: Test
-           env:
+          with:
+          env:
           SAUCELABS_ACCESS_KEY: ${{ secrets.SAUCELABS_ACCESS_KEY }}
           SAUCELABS_USERNAME: ${{ secrets.SAUCELABS_USERNAME }}
           run: npm run test:sauce:android --spec test/specs/login.spec.js
