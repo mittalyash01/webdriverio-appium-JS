@@ -15,8 +15,8 @@ config.specs = [
 // ============
 config.capabilities = [
   {
-    user: process.env.SAUCELABS_USERNAME || 'mittalya',
-    key: process.env.SAUCELABS_ACCESS_KEY || 'fc219337-d649-4d5f-a0c9-aabdf4cb7634',
+    user: process.env.SAUCELABS_USERNAME,
+    key: process.env.SAUCELABS_ACCESS_KEY,
     platformName: 'Android',
     'appium:app': 'storage:filename=Android.SauceLabs.Mobile.Sample.app.2.7.1.apk',
     'appium:deviceName': 'Samsung.*',
