@@ -1,4 +1,4 @@
-name: CI saucelabs
+name: CI perfecto
 on:
   push:
     branches: [main]
@@ -10,7 +10,7 @@ on:
         description: 'Environment (example : local, saucelabs, browserstack)'
         required: true
         default: "local"
-
+        
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,10 +23,11 @@ jobs:
         - name: Install
           run: npm install
         - name: Test
-          run: npm run test:sauce:android --spec test/specs/login.spec.js
+          run: npm run test:perfecto:ios --spec test/specs/login.spec.js
           env:
-            SAUCELABS_ACCESS_KEY: ${{ secrets.SAUCELABS_ACCESS_KEY }}
-            SAUCELABS_USERNAME: ${{ secrets.SAUCELABS_USERNAME }}
+            PERFECTO_SECURITY_TOKEN: ${{ secrets.PERFECTO_SECURITY_TOKEN }}
+            PERFECTO_IOS_APP: ${{ secrets.PERFECTO_IOS_APP }}
+            PERFECTO_ANDROID_APP: ${{ secrets.PERFECTO_ANDROID_APP }}
         - uses: actions/upload-artifact@v1
           if: failure()
           with:
