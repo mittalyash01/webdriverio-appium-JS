@@ -23,7 +23,7 @@ jobs:
         - name: Install
           run: npm install
         - name: Test
-          run: npm run test:perfecto:ios --spec test/specs/login.spec.js
+          run: npm run test:perfecto:android --spec test/specs/login.spec.js
           env:
             PERFECTO_SECURITY_TOKEN: ${{ secrets.PERFECTO_SECURITY_TOKEN }}
             PERFECTO_IOS_APP: ${{ secrets.PERFECTO_IOS_APP }}
