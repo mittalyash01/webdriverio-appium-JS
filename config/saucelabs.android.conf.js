@@ -1,5 +1,7 @@
 const path = require('path');
 const { config } = require('./wdio.shared.conf');
+const user= '';
+const key = '';
 
 //
 // ============
@@ -15,8 +17,8 @@ config.specs = [
 // ============
 config.capabilities = [
   {
-    //user: process.env.SAUCELABS_USERNAME,
-    //key: process.env.SAUCELABS_ACCESS_KEY,
+    user: process.env.SAUCELABS_USERNAME || user,
+    key: process.env.SAUCELABS_ACCESS_KEY || key,
     platformName: 'Android',
     'appium:app': 'storage:filename=Android.SauceLabs.Mobile.Sample.app.2.7.1.apk',
     'appium:deviceName': 'Samsung.*',
