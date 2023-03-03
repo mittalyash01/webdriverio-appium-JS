@@ -38,6 +38,7 @@
     "@wdio/sauce-service": "^8.3.10",
     "@wdio/spec-reporter": "^7.14.1",
     "eslint": "7.32.0",
-    "eslint-plugin-wdio": "^7.4.2"
+    "eslint-plugin-wdio": "^7.4.2",
+    "wdio-aws-device-farm-service": "^7.1.0"
   }
 }

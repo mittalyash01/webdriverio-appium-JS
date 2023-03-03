@@ -1,4 +1,4 @@
-name: CI
+name: CI Local
 on: [push]
 jobs:
   build:
