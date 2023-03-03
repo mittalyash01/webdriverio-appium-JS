@@ -1,4 +1,4 @@
-name: CI saucelabs
+name: CI browserstack
 on: [push]
   # push:
   #   branches: [main]
@@ -23,10 +23,10 @@ jobs:
         - name: Install
           run: npm install
         - name: Test
-          run: npm run test:saucelabs:android --spec test/specs/login.spec.js
+          run: npm run test:browserstack:ios --spec test/specs/login.spec.js
           env:
-            SAUCELABS_ACCESS_KEY: ${{ secrets.SAUCELABS_ACCESS_KEY }}
-            SAUCELABS_USERNAME: ${{ secrets.SAUCELABS_USERNAME }}
+            BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+            BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
         - uses: actions/upload-artifact@v1
           if: failure()
           with:
