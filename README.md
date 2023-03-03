@@ -3,5 +3,3 @@
 
 ## Run test
 `npx wdio {config} --spec {filename}`
-
-## added for testing Navneet....
