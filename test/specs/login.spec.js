@@ -7,7 +7,8 @@ describe('Login', () => {
   afterEach(async function() {
     await ProductListScreen.menuButton.click();
     await SidePanelScreen.logOutButton.click();
-    await expect(LoginScreen.usernameField && LoginScreen.passwordField).toBeDisplayed();
+    await expect(LoginScreen.usernameField).toBeDisplayed();
+    await expect(LoginScreen.passwordField).toBeDisplayed();
   });
 
   it('LOGIN_valid_user', async () => {
