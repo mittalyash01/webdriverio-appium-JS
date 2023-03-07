@@ -1,7 +1,7 @@
 const path = require('path');
 const { config } = require('./wdio.shared.conf');
-const user= '';
-const key = '';
+const user= 'mittalya';
+const key = 'DFUq64gVWRSzFxGT9wXi';
 
 //
 // ============
