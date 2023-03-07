@@ -28,8 +28,8 @@ exports.config = {
             screenshotOnError: true,
             autoLaunch: true,
             autoInstrument: true,
-        },
-    ],
+        }
+],
     waitforTimeout: 30000,
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,
