@@ -4,18 +4,16 @@
   "description": "Appium tests using WebdriverIO",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test:saucelabs:android": "wdio config/saucelabs.android.conf.js",
-    "test:saucelabs:ios": "wdio config/saucelabs.ios.conf.js",
-    "test:perfecto:android": "wdio config/perfecto.android.conf.js",
-    "test:perfecto:ios": "wdio config/perfecto.ios.conf.js",
-    "test:browserstack:android": "wdio config/browserstack.android.conf.js",
-    "test:browserstack:ios": "wdio config/browserstack.ios.conf.js"
+    "test": "npm install && npx wdio ./wdio.conf.awscdf.android.js",
+    "package": "npm install && npm-pack-zip"
   },
   "keywords": [
     "webdriverio",
     "appium",
-    "perfecto"
+    "perfecto",
+    "saucelabs",
+    "browserstack",
+    "awscloudfarm"
   ],
   "author": "",
   "license": "ISC",
@@ -40,6 +38,7 @@
     "eslint": "7.32.0",
     "eslint-plugin-wdio": "^7.4.2",
     "npm-bundle": "^3.0.3",
+    "npm-pack-zip": "^1.2.7",
     "wdio-aws-device-farm-service": "^7.1.0"
   }
 }
