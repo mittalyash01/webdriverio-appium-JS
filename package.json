@@ -4,8 +4,8 @@
   "description": "Appium tests using WebdriverIO",
   "main": "index.js",
   "scripts": {
-    "test": "npm install && npx wdio ./wdio.conf.awscdf.android.js",
-    "package": "npm install && npm-pack-zip"
+    "package": "npm-pack-zip",
+    "test:aws:android": "wdio config/awscdf.android.conf.js"
   },
   "keywords": [
     "webdriverio",
