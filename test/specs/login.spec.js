@@ -22,17 +22,4 @@ describe('Login', () => {
     await new Promise(f => setTimeout(f, 2000));
   });
 
-  // it('PRODUCT_onesie', async () => {
-  //   await LoginScreen.usernameField.setValue("standard_user");
-  //   await LoginScreen.passwordField.setValue("secret_sauce");
-  //   await LoginScreen.loginButton.click();
-  //   await expect(ProductListScreen.productList).toBeDisplayed();
-  //   await ProductListScreen.onesieShirt.scrollIntoView();
-  //   await expect(ProductListScreen.onesieShirt).toBeDisplayed();
-  //   await touchAction([{ action: "longPress",,,}]);
-  //   await ProductListScreen.onesieShirt.click;
-  //   await expect(ProductOnesieScreen.onesieTitle).toBeDisplayed();
-  //   await new Promise(f => setTimeout(f, 2000));
-  // });
-
 });
