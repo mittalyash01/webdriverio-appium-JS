@@ -8,10 +8,11 @@ describe('Login', () => {
   afterEach(async function() {
     await ProductListScreen.menuButton.click();
     await SidePanelScreen.logOutButton.click();
-    await expect(LoginScreen.usernameField && LoginScreen.passwordField).toBeDisplayed();
+    await expect(LoginScreen.usernameField).toBeDisplayed();
+    await expect(LoginScreen.passwordField).toBeDisplayed();
   });
 
-  it('LOGIN_valid_user', async () => {
+  it('LOGIN_locked_out_user', async () => {
     await LoginScreen.usernameField.setValue("locked_out_user");
     await LoginScreen.passwordField.setValue("secret_sauce");
     await LoginScreen.loginButton.click();
