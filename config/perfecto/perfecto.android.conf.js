@@ -1,8 +1,8 @@
 const path = require('path');
-const { config } = require('./wdio.shared.conf');
+const { config } = require('../wdio.shared.conf');
 const host = 'trial';
 const securityToken = '';
-const PERFECTO_IOS_APP= '';
+const PERFECTO_ANDROID_APP= 'PRIVATE:Android.SauceLabs.Mobile.Sample.app.2.7.1.apk';
 
 exports.config = {
     securityToken: process.env.PERFECTO_SECURITY_TOKEN || securityToken,
@@ -18,18 +18,18 @@ exports.config = {
         {
             securityToken: process.env.PERFECTO_SECURITY_TOKEN || securityToken,
             automationName: 'Appium',
-            platformName: 'iOS',
-            platformVersion: '15.0',
-            manufacturer: 'Apple',
-            model: 'iPhone-13 Mini',
+            platformName: 'Android',
+            platformVersion: '9',
+            manufacturer: 'Samsung',
+            model: 'Galaxy Tab S3 9.7',
             waitForAvailableLicense: true,
-            app: process.env.PERFECTO_IOS_APP || PERFECTO_IOS_APP,
+            app: process.env.PERFECTO_ANDROID_APP || PERFECTO_ANDROID_APP,
             takesScreenshot: true,
             screenshotOnError: true,
             autoLaunch: true,
             autoInstrument: true,
         }
-    ],
+],
     waitforTimeout: 30000,
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,

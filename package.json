@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:saucelabs:android": "wdio config/saucelabs.android.conf.js",
-    "test:saucelabs:ios": "wdio config/saucelabs.ios.conf.js",
-    "test:perfecto:android": "wdio config/perfecto.android.conf.js",
-    "test:perfecto:ios": "wdio config/perfecto.ios.conf.js",
-    "test:browserstack:android": "wdio config/browserstack.android.conf.js",
-    "test:browserstack:ios": "wdio config/browserstack.ios.conf.js"
+    "test:saucelabs:android": "wdio config/saucelabs/saucelabs.android.conf.js",
+    "test:saucelabs:ios": "wdio config/saucelabs/saucelabs.ios.conf.js",
+    "test:perfecto:android": "wdio config/perfecto/perfecto.android.conf.js",
+    "test:perfecto:ios": "wdio config/perfecto/perfecto.ios.conf.js",
+    "test:browserstack:android": "wdio config/browserstack/browserstack.android.conf.js",
+    "test:browserstack:ios": "wdio config/browserstack/browserstack.ios.conf.js"
   },
   "keywords": [
     "webdriverio",

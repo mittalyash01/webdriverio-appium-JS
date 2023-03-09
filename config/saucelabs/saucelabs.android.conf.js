@@ -1,5 +1,5 @@
 const path = require('path');
-const { config } = require('./wdio.shared.conf');
+const { config } = require('../wdio.shared.conf');
 const user= '';
 const key = '';
 
@@ -17,16 +17,15 @@ config.specs = [
 // ============
 config.capabilities = [
   {
-    
     user: process.env.SAUCELABS_USERNAME || user,
     key: process.env.SAUCELABS_ACCESS_KEY || key,
-    platformName: 'iOS',
-    'appium:app': 'storage:filename=iOS.RealDevice.SauceLabs.Mobile.Sample.app.2.7.1.ipa',
-    'appium:deviceName': 'iPhone.*',
-    'appium:automationName': 'XCUITest',
+    platformName: 'Android',
+    'appium:app': 'storage:filename=Android.SauceLabs.Mobile.Sample.app.2.7.1.apk',
+    'appium:deviceName': 'Samsung.*',
+    'appium:automationName': 'UiAutomator2',
     'sauce:options': {
-      build: "IOS",
-      name: "ios_test",
+      build: "ANDROID",
+      name: "android_test",
     }
   }
 ]
