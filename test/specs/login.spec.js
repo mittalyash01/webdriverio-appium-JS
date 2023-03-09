@@ -5,6 +5,12 @@ const ProductOnesieScreen= require("../screenobjects/product-onesie.screen");
 
 describe('Login', () => {
 
+  afterEach(async function() {
+    await ProductListScreen.menuButton.click();
+    await SidePanelScreen.logOutButton.click();
+    await expect(LoginScreen.usernameField && LoginScreen.passwordField).toBeDisplayed();
+  });
+
   it('LOGIN_valid_user', async () => {
     await LoginScreen.usernameField.setValue("standard_user");
     await LoginScreen.passwordField.setValue("secret_sauce");
