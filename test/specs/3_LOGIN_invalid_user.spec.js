@@ -1,6 +1,6 @@
 const LoginScreen = require("../screenobjects/login.screen");
 
-describe('Hackathon Scenarios', () => {
+describe('Hackathon Scenario_3', () => {
 
   it('3_LOGIN_invalid_user', async () => {
     await LoginScreen.usernameField.setValue("invalid_username");

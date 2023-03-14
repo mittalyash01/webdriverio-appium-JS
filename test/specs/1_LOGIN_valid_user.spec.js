@@ -2,7 +2,7 @@ const LoginScreen = require("../screenobjects/login.screen");
 const ProductListScreen = require("../screenobjects/product-list.screen");
 const SidePanelScreen = require("../screenobjects/side-panel.screen");
 
-describe('Hackathon Scenarios', () => {
+describe('Hackathon Scenario_1', () => {
 
 
 

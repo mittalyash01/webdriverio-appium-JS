@@ -1,6 +1,6 @@
 const LoginScreen = require("../screenobjects/login.screen");
 
-describe('Hackathon Scenarios_2', () => {
+describe('Hackathon Scenario_2', () => {
 
 
   it('2_LOGIN_locked_out_user', async () => {
