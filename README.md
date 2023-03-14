@@ -64,4 +64,5 @@ Clone the repository and npm install.....
 
 Tools | Device Farm | Abrupt Connection Loss/Latencies | Execution Cycles | Tool Integrations | Framework Stability | Android/iOS version | Technical Support | 
 --- | --- | --- | --- |--- |--- |--- |--- |
-Appium + WebDriverIO | BrowserStack | 283 | 290 | 286 | 289 | 285 | 287 |
+Appium + WebDriverIO | BrowserStack |  |  |  |  |  |  |
+:---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
