@@ -66,3 +66,5 @@ Clone the repository and npm install.....
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |--- |
 | Appium + WebDriverIO | BrowserStack |  |  |  |  |  |  | |  |
 | Appium + WebDriverIO | Perfecto |  |  |  |  |  |  |  |  |
+| Appium + WebDriverIO | Saucelabs |  |  |  |  |  |  |  |  |
+| Appium + WebDriverIO | AWS Device Farm |  |  |  |  |  |  |  |  |
