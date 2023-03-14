@@ -62,7 +62,8 @@ Clone the repository and npm install.....
 ## Metrics
 -----------------------
 
-Tools | Device Farm | Abrupt Connection Loss/Latencies | Execution Cycles | Tool Integrations | Framework Stability | Android/iOS version | Technical Support | 
---- | --- | --- | --- |--- |--- |--- |--- |
-Appium + WebDriverIO | BrowserStack |  |  |  |  |  |  |
---- | --- | --- | --- |--- |--- |--- |--- |
+Test Automation tool stack | Device Farm | Abrupt Connection Loss/Latencies (Device connection aren't reliable, abruptly the connections are lost during execution (Score out of 10) | Execution Cycles (Test Case execution time) | Execution Cycles (Test Suite execution time)  | Tool Integrations (Complexity with tool integrations (Low / Medioum/ High/ Very High) | Framework Stability (% of test cases passed as compared to total number of executions) | Android/iOS version (Tool support for android/iOS versions) | Technical Support (Insufficient support received from vendor) | Technical Support (Native app or list the features not supported by the tool) |
+
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |
+Appium + WebDriverIO | BrowserStack |  |  |  |  |  |  | | |
+Appium + WebDriverIO | Perfecto |  |  |  |  |  |  | | |
