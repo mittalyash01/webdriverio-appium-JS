@@ -1,3 +1,4 @@
+![QR Code Scanner](./docs/assets/Hackathon bg.jpg) 
 
 # Mobile Hackathon: Introduction
 ..............................
