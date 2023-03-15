@@ -71,6 +71,10 @@ Clone the repository and npm install.....
 
 ### Sauce labs
 ......
+![Hackathon-Introduction](./docs/assets/saucelabs_ios_conf.jpg)
+
+![Hackathon-Introduction](./docs/assets/saucelabs_android_conf.jpg)
+
 
 #### Shortcoming
 
@@ -79,6 +83,10 @@ Clone the repository and npm install.....
 
 ### BrowserStack
 ...........
+
+![Hackathon-Introduction](./docs/assets/browserstack_android_conf.jpg)
+
+![Hackathon-Introduction](./docs/assets/browserstack_ios_conf.jpg)
 
 #### Shortcoming
 ...................
