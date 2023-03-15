@@ -1,17 +1,70 @@
 ![Hackathon Introduction(./docs/assets/Hackathon bg.jpg)
 
 # Mobile Hackathon: Introduction
-..............................
+This repository is setup as a part of Mobile Test automation hackathon to demonstrate the capabilities of [WebDriverIO](https://webdriver.io/) test automation framework.
+
+## Table of contents
+1. [Getting Started](#Getting Started)
+    1. [Pre-requisites](#Pre-requisites)
+    1. [Supported testing types and platforms](#Supported-testing-types-and-platforms)
+    1. [Installation](#Installation)
+        1. [Use with Android](#use-with-android)
+        1. [Use with iOS](#use-with-ios)
+    1. [How to use](#how-to-use)
+    1. [Integrations](#Integrations)
+        1. [Saucelabs](#Saucelabs)
+            1. [Positive Outlook](#Positive-outlook)
+            1. [Shortcomings](#Shortcomings)
+        1. [BrowserStack](#BrowserStack)
+            1. [Positive Outlook](#Positive-outlook)
+            1. [Shortcomings](#Shortcomings)
+        1. [Perfecto](#Perfecto)
+            1. [Positive Outlook](#Positive-outlook)
+            1. [Shortcomings](#Shortcomings)
+        1. [AWS Device Farm](#aws-device-farm)
+            1. [Positive Outlook](#Positive-outlook)
+            1. [Shortcomings](#Shortcomings)
+1. [Running your first test](#running-your-test)
+1. [Overall Summary](#overall-summary)
+1. [Metrics](#Metrics)
+ 
 
 ## Getting Started
 ...........................................
 
-Clone the repository and npm install.....
-............................
+### Pre-requisites
+The user must need
+
+* 
+* 
+
+Your machine should
+
+* 
+* 
+,
+## Supported testing types and platforms
+- [x] Mobile app on Android
+- [x] Mobile app on iOS
+- [ ] Web app on Android
+- [ ] Web app on iOS
+
+
 
 ## Installation and Local setup
+Clone the repository and npm install.....
+............................
 - **Install packages**: `npm install`
 ..................
+
+### Use with Android
+......................
+
+### Use with iOS
+.................
+
+## How to Use
+......................
 
 ## Integrations
 ......
@@ -53,7 +106,7 @@ Clone the repository and npm install.....
 
 
 
-## Running tests locally
+## Running your first test
 ...............................
 `npx wdio {config} --spec {filename}`
 
