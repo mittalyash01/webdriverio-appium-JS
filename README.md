@@ -96,6 +96,12 @@ Clone the repository and npm install.....
 
 ### Perfecto
 ----------
+Android
+![Hackathon-Introduction](./docs/assets/Perfecto_android_conf.jpg)
+
+iOS
+![Hackathon-Introduction](./docs/assets/Perfecto_ios_conf.jpg)
+
 
 #### Shortcoming
 1. Tests executed ok over iOS but same test failed over Android. Have to segregate validation steps as it was not synchronizing both together.
