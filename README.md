@@ -1,4 +1,4 @@
-![Hackathon Introduction(./docs/assets/Hackathon bg.jpg)
+![Hackathon-Introduction](./docs/assets/Hackathon bg.jpg)
 
 # Mobile Hackathon: Introduction
 This repository is setup as a part of Mobile Test automation hackathon to demonstrate the capabilities of [WebDriverIO](https://webdriver.io/) test automation framework.
