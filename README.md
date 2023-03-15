@@ -1,4 +1,4 @@
-![QR Code Scanner](./docs/assets/Hackathon bg.jpg) 
+![Hackathon Introduction(./docs/assets/Hackathon bg.jpg)
 
 # Mobile Hackathon: Introduction
 ..............................
