@@ -4,7 +4,7 @@
 This repository is setup as a part of Mobile Test automation hackathon to demonstrate the capabilities of [WebDriverIO](https://webdriver.io/) test automation framework.
 
 ## Table of contents
-1. [Getting Started](#Getting Started)
+1. [Getting Started](#Getting-started)
     1. [Pre-requisites](#Pre-requisites)
     1. [Supported testing types and platforms](#Supported-testing-types-and-platforms)
     1. [Installation](#Installation)
