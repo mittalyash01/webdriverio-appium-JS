@@ -96,10 +96,9 @@ In this section we will elaborate the integration of the automation framework wi
 
 ### Perfecto
 ----------
-Android
+
 ![Hackathon-Introduction](./docs/assets/Perfecto_android_conf.jpg)
 
-iOS
 ![Hackathon-Introduction](./docs/assets/Perfecto_ios_conf.jpg)
 
 
