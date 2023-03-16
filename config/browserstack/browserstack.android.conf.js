@@ -22,7 +22,7 @@ config.capabilities = [
     "platformName" : "android",
     "appium:platformVersion" : "12.0",
     "appium:deviceName" : "Samsung Galaxy S22 Ultra",
-    "appium:app" : "bs://a479227ab81da5bf8821ab0c57de7ebffca3d4fc",
+    "appium:app" : "bs://eeb58d587be0810d5de10ec396de1662142f7057",
   }
 ]
 
