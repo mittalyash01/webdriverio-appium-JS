@@ -1,4 +1,4 @@
-![Hackathon-Introduction](./docs/assets/Hackathon_bg.jpg)
+![Hackathon-Introduction](./docs/assets/Hackathon_bg2.jpg)
 
 # Mobile Hackathon: Introduction
 This repository is setup as a part of Mobile Test automation hackathon to demonstrate the capabilities of [WebDriverIO](https://webdriver.io/) test automation framework. The team has setup WebDriverIO for mobile native app test automation with libraries/tools such as- [mocha](https://mochajs.org/) framework, [Appium](https://appium.io) for mobile automation, [Allure Reporter](https://webdriver.io/docs/allure-reporter/) for robust reporting. We also demonstrated and compared the capabilities of integrating this framework with cloud execution environments such as- [BrowserStack](https://www.browserstack.com/), [Saucelabs](https://saucelabs.com/), [Perfecto](https://www.perfecto.io/) and [AWS Device Farm](https://aws.amazon.com/device-farm/).
@@ -44,7 +44,7 @@ Note: Optional (to execute using emulator): [Android Studio](https://developer.a
     
 Your machine should have below minimum configurations:
 
-* OS: Windows 10 or later version | MacOS 10.7 or later version
+* OS: Windows 10 or later version || MacOS 10.7 or later version
 * Processor: Intel i5 or later version 
 * Memory: 8 GB RAM
 * Hard Disk: 10 GB free space
@@ -95,7 +95,7 @@ For iOS:
 
 Note: *BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY are stored in environment variables and read from there, these can be obtained from browserstack's website for each users.*
 
-   ![Hackathon-Introduction](./docs/assets/shortcoming_icon.jpg) <Intentionally put to have space>   ![Hackathon-Introduction](./docs/assets/positive_outlook.jpg) 
+   ![Hackathon-Introduction](./docs/assets/shortcoming_icon.jpg) and   ![Hackathon-Introduction](./docs/assets/positive_outlook.jpg) 
 
 | Shortcoming |  Positive outlook |
 | --- | --- |
