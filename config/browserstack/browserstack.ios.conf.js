@@ -22,7 +22,7 @@ config.capabilities = [
     "platformName" : "ios",
     "appium:platformVersion" : "16.0",
     "appium:deviceName" : "iPhone 14",
-    "appium:app" : "bs://68ee84e5bb3a7bc0a3f2a9b501c6aeeeb2c21bdf",
+    "appium:app" : "bs://e5bb603500754df9402c2bcd7db4f5bd7d79a81b",
   }
 ]
 
