@@ -1,4 +1,4 @@
-![Hackathon-Introduction](./docs/assets/Hackathon bg.jpg)
+![Hackathon-Introduction](./docs/assets/Hackathon_bg.jpg)
 
 # Mobile Hackathon: Introduction
 This repository is setup as a part of Mobile Test automation hackathon to demonstrate the capabilities of [WebDriverIO](https://webdriver.io/) test automation framework. The team has setup WebDriverIO for mobile native app test automation with libraries/tools such as- [mocha](https://mochajs.org/) framework, [Appium](https://appium.io) for mobile automation, [Allure Reporter](https://webdriver.io/docs/allure-reporter/) for robust reporting. We also demonstrated and compared the capabilities of integrating this framework with cloud execution environments such as- [BrowserStack](https://www.browserstack.com/), [Saucelabs](https://saucelabs.com/), [Perfecto](https://www.perfecto.io/) and [AWS Device Farm](https://aws.amazon.com/device-farm/).
@@ -27,6 +27,7 @@ This repository is setup as a part of Mobile Test automation hackathon to demons
 1. [Running your first test](#running-your-test)
 1. [Overall Summary](#overall-summary)
 1. [Metrics](#Metrics)
+1. [Cloud Service Providers list](#cloud-service-providers)
  
  ------------------------------------------------------------------------
 
@@ -70,10 +71,10 @@ The target iOS application's apk is available in [app](https://github.com/mittal
 ### How to Use
 The below steps should be followed to use the scripts: <To be filled> To be filled
 
-## Integrations
+### Integrations
 In this section we will elaborate the integration of the automation framework with various cloud execution environment/ device farm. We will showcase the capability of each combination: in depth analysis of what went good and bad, how we navigate through challenges and share some key metrics around each combination.
 
-# BrowserStack ![Hackathon-Introduction](./docs/assets/BrowserStack_Logo_2.jpg) 
+### BrowserStack 
 
 [BrowserStack](https://www.browserstack.com/app-live) is a cloud web and mobile testing platform which offers the ability to test websites and mobile applications across on-demand browsers and real mobile devices. The list of supoorted devices and OS versions for Automation are listed [here](https://www.browserstack.com/list-of-browsers-and-platforms/app_automate)
 
@@ -160,3 +161,11 @@ Note: *BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY are stored in environme
 | Appium + WebDriverIO | Perfecto |  |  |  |  |  |  |  |  |
 | Appium + WebDriverIO | Saucelabs |  |  |  |  |  |  |  |  |
 | Appium + WebDriverIO | AWS Device Farm |  |  |  |  |  |  |  |  |
+
+## Cloud Service Providers list
+
+<a href="https://www.browserstack.com/"><img src="./docs/assets/BrowserStack_Logo_2.jpg" alt="browserstack" height = "60"/>
+<a href="https://saucelabs.com/"><img src="./docs/assets/saucelabs_icon.jpg" alt="saucelabs" height = "60"/>
+<a href="https://www.perfecto.io//"><img src="./docs/assets/perfecto_icon.jpg" alt="perfecto" height = "60"/>
+<a href="https://aws.amazon.com/device-farm/"><img src="./docs/assets/aws_logo.jpg" alt="aws" height = "60"/>
+
