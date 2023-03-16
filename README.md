@@ -96,6 +96,7 @@ For iOS:
 Note: *BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY are stored in environment variables and read from there, these can be obtained from browserstack's website for each users.*
 
    ![Hackathon-Introduction](./docs/assets/shortcoming_icon.jpg) <Intentionally put to have space>   ![Hackathon-Introduction](./docs/assets/positive_outlook.jpg) 
+
 | Shortcoming |  Positive outlook |
 | --- | --- |
 | * Not any significant issues | * Easy to integrate |
