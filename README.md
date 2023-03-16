@@ -27,10 +27,12 @@ This repository is setup as a part of Mobile Test automation hackathon to demons
 1. [Running your first test](#running-your-test)
 1. [Overall Summary](#overall-summary)
 1. [Metrics](#Metrics)
- 
 
-## Getting Started
-...........................................
+---------------------------------------------
+
+<h2 id="Getting-started">Getting Started</h2>
+..............................................
+
 
 ### Pre-requisites
 The user must need
