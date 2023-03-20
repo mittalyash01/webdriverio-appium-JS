@@ -5,14 +5,6 @@ const ProductOnesieScreen = require("../screenobjects/product-onesie.screen");
 
 describe('Hackathon Scenario_4', () => {
 
-  afterEach(async function () {
-    await ProductListScreen.menuButton.click();
-    await SidePanelScreen.logOutButton.click();
-    await expect(LoginScreen.usernameField ).toBeDisplayed();
-    await expect(LoginScreen.passwordField).toBeDisplayed();
-
-  });
-
   it('4_PRODUCT_onesie', async () => {
     await LoginScreen.usernameField.setValue("standard_user");
     await LoginScreen.passwordField.setValue("secret_sauce");
@@ -54,6 +46,12 @@ describe('Hackathon Scenario_4', () => {
     await ProductListScreen.onesieShirt.click();
     await expect(ProductOnesieScreen.onesieTitle).toBeDisplayed();
     await new Promise(f => setTimeout(f, 2000));
+
+/*Cleanup*/
+    await ProductListScreen.menuButton.click();
+    await SidePanelScreen.logOutButton.click();
+    await expect(LoginScreen.usernameField ).toBeDisplayed();
+    await expect(LoginScreen.passwordField).toBeDisplayed();
   });
 
 });
