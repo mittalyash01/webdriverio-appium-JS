@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@content-desc=\"test-Error message\" or @name=\"test-Error message\"]/child::*[1]"
+}
