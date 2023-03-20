@@ -130,7 +130,8 @@ Note: *BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY are stored in environme
 1. Tests executed ok over iOS but same test failed over Android. Have to segregate validation steps as it was not synchronizing both together.
 2. Timeout issue- fixed global timeouts
 3. Need to check device availability every time before executing tests- since these were shared/public devices over the cloud. The device management is not present, could be better from usability POV.
-4. Time to open a tunnel connection is somewhat longer which is approx~ 15 seconds
+4. Perfecto doesn't support latest version of WebDriverIO 8.
+5. Time to open a tunnel connection is somewhat longer which is approx~ 15 seconds
 
 ### Positive outlook ![Hackathon-Introduction](./docs/assets/positive_outlook.jpg)
 .................
