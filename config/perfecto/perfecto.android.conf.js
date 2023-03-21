@@ -2,36 +2,40 @@ const path = require('path');
 const { config } = require('../wdio.shared.conf');
 const host = 'trial';
 const securityToken = '';
-const PERFECTO_ANDROID_APP= 'PRIVATE:Android.SauceLabs.Mobile.Sample.app.2.7.1.apk';
+const PERFECTO_ANDROID_APP = 'PRIVATE:Android.SauceLabs.Mobile.Sample.app.2.7.1.apk';
 
-exports.config = {
-    securityToken: process.env.PERFECTO_SECURITY_TOKEN || securityToken,
-    protocol: 'http',
-    hostname: host + '.perfectomobile.com',
-    path: '/nexperience/perfectomobile/wd/hub',
-    port: 80,
-    specs: [
-        path.join(process.cwd(), './test/specs/**/*.js')
-    ],
-    //maxInstances: 1,
-    capabilities: [
-        {
-            securityToken: process.env.PERFECTO_SECURITY_TOKEN || securityToken,
-            automationName: 'Appium',
-            platformName: 'Android',
-            platformVersion: '10',
-            manufacturer: 'Samsung',
-            model: 'Galaxy Tab S4 10.5',
-            waitForAvailableLicense: true,
-            app: process.env.PERFECTO_ANDROID_APP || PERFECTO_ANDROID_APP,
-            takesScreenshot: true,
-            screenshotOnError: true,
-            autoLaunch: true,
-            autoInstrument: true,
-        }
-],
-    waitforTimeout: 30000,
-    connectionRetryTimeout: 90000,
-    connectionRetryCount: 3,
-    framework: 'mocha',
-}
+
+config.protocol = 'http';
+config.hostname = (host + '.perfectomobile.com');
+config.path = '/nexperience/perfectomobile/wd/hub';
+config.port = 80;
+config.sync = true;
+config.bail = 0;
+
+config.specs = [
+    path.join(process.cwd(), './test/specs/**/*.js')
+];
+
+//
+// ============
+// Capabilities
+// ============
+config.capabilities = [
+    {
+        securityToken: process.env.PERFECTO_SECURITY_TOKEN || securityToken,
+        automationName: 'Appium',
+        platformName: 'Android',
+        platformVersion: '10',
+        manufacturer: 'Samsung',
+        model: 'Galaxy S9',
+        app: process.env.PERFECTO_ANDROID_APP || PERFECTO_ANDROID_APP,
+        autoLaunch: true,
+        browserName: '',
+        takesScreenshot: false,
+        screenshotOnError: true,
+        openDeviceTimeout: 5
+
+    }
+]
+
+exports.config = config;
