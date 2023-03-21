@@ -3,16 +3,6 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-  # push:
-  #   branches: [main]
-  # pull_request:
-  #   branches: [main]
-  # workflow dispatch:
-  #   inputs:
-  #     types:
-  #       description: 'Environment (example : local, saucelabs, browserstack)'
-  #       required: true
-  #       default: "local"
         
 jobs:
   build:
@@ -25,8 +15,10 @@ jobs:
             node-version: 16.3.0
         - name: Install
           run: npm install
-        - name: Test
-          run: npm run test:perfecto:android --spec test/specs/login.spec.js
+        - name: Test android
+          run: npm run test:perfecto:android
+        - name: Test iOS
+          run: npm run test:perfecto:ios
           env:
             PERFECTO_SECURITY_TOKEN: ${{ secrets.PERFECTO_SECURITY_TOKEN }}
             PERFECTO_IOS_APP: ${{ secrets.PERFECTO_IOS_APP }}

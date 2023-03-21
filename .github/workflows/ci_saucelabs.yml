@@ -3,16 +3,6 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-  # push:
-  #   branches: [main]
-  # pull_request:
-  #   branches: [main]
-  # workflow dispatch:
-  #   inputs:
-  #     types:
-  #       description: 'Environment (example : local, saucelabs, browserstack)'
-  #       required: true
-  #       default: "local"
 
 jobs:
   build:
@@ -26,7 +16,7 @@ jobs:
         - name: Install
           run: npm install
         - name: Test
-          run: npm run test:saucelabs:android --spec test/specs/login.spec.js
+          run: npm run test:saucelabs:android
           env:
             SAUCELABS_ACCESS_KEY: ${{ secrets.SAUCELABS_ACCESS_KEY }}
             SAUCELABS_USERNAME: ${{ secrets.SAUCELABS_USERNAME }}
