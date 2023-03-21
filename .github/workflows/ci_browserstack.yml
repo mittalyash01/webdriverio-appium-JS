@@ -1,6 +1,41 @@
 name: CI browserstack
 on: 
   workflow_dispatch:
+    inputs:
+      platform:
+        type: choice
+        description: 'Platform (iOS/Android/both)' 
+        required: false
+        default: android
+        options:
+        - android
+        - ios
+      spec:
+        type: choice
+        default: all
+        options:
+          - 1_LOGIN_valid_user.spec
+          - 2_LOGIN_locked_out_user.spec
+          - 3_LOGIN_invalid_user.spec
+          - 4_PRODUCT_onesie.spec
+          - all
+        description: 'Spec (no file extension needed)'
+        required: false
+      device:
+        type: choice
+        description: 'Device'
+        required: false
+        options:
+          - Samsung Galaxy S22
+          - Samsung Galaxy Tab S6
+          - Google Pixel 6 Pro
+          - iPhone 14
+          - iPhone 11
+          - iPad 7th
+      os_version:
+        description: 'OS version'
+        required: false
+    
   push:
     branches: [main]
 
@@ -19,7 +54,20 @@ jobs:
         - name: Install
           run: npm install
         - name: Test
-          run: npm run test:browserstack:ios
+          run: |
+            if [[ "${{ github.event.inputs.platform }}" == "android" ]]; then
+              if [ "${{ github.event.inputs.spec }}" != 'all'  ]; then
+                npm --device="${{ github.event.inputs.device }}" --osversion=${{ github.event.inputs.os_version }} run test:browserstack:android -- --spec=./test/specs/**/${{ github.event.inputs.spec }}.js 
+              else
+                npm --device="${{ github.event.inputs.device }}" --osversion=${{ github.event.inputs.os_version }} run test:browserstack:android
+              fi
+            else
+              if [ "${{ github.event.inputs.spec }}" != 'all'  ]; then
+                npm --device="${{ github.event.inputs.device }}" --osversion=${{ github.event.inputs.os_version }} run test:browserstack:ios -- --spec=./test/specs/**/${{ github.event.inputs.spec }}.js 
+              else
+                npm --device="${{ github.event.inputs.device }}" --osversion=${{ github.event.inputs.os_version }} run test:browserstack:ios
+              fi
+            fi
           env:
             BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
             BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
