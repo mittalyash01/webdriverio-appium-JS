@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@text=\"Sauce Labs Onesie\" or @label=\"Sauce Labs Onesie\"]"
+}
