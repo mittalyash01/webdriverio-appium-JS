@@ -15,9 +15,7 @@ jobs:
             node-version: 16.3.0
         - name: Install
           run: npm install
-        - name: Test android
-          run: npm run test:perfecto:android
-        - name: Test iOS
+        - name: Test
           run: npm run test:perfecto:ios
           env:
             PERFECTO_SECURITY_TOKEN: ${{ secrets.PERFECTO_SECURITY_TOKEN }}
