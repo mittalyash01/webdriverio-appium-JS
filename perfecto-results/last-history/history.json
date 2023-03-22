@@ -1,0 +1,1 @@
+{"9e843cdf3a10fcf6056d9d57e4a04698":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"36b4f22b0eaf1c0d","reportUrl":"https://mittalyash01.github.io/webdriverio-appium-team1/perfecto-results/24//#testresult/36b4f22b0eaf1c0d","status":"passed","time":{"start":1679445457826,"stop":1679445473805,"duration":15979}}]}}
