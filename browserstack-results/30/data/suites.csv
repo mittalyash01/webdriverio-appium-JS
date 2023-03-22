@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Mar 20 23:09:48 GMT 2023","Mon Mar 20 23:10:01 GMT 2023","13046","","Hackathon Scenario_3","","Hackathon Scenario_3","3_LOGIN_invalid_user","3_LOGIN_invalid_user",""
-"passed","Mon Mar 20 23:08:47 GMT 2023","Mon Mar 20 23:08:59 GMT 2023","12035","","Hackathon Scenario_1","","Hackathon Scenario_1","1_LOGIN_valid_user","1_LOGIN_valid_user",""
-"passed","Mon Mar 20 23:09:18 GMT 2023","Mon Mar 20 23:09:28 GMT 2023","9111","","Hackathon Scenario_2","","Hackathon Scenario_2","2_LOGIN_locked_out_user","2_LOGIN_locked_out_user",""
-"passed","Mon Mar 20 23:10:21 GMT 2023","Mon Mar 20 23:10:39 GMT 2023","17962","","Hackathon Scenario_4","","Hackathon Scenario_4","4_PRODUCT_onesie","4_PRODUCT_onesie",""
