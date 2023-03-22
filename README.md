@@ -75,8 +75,8 @@ The target iOS application's apk is available in [app](https://github.com/mittal
 
 ### How to Use
 The below steps should be followed to use this framework:
-- [Clone] (https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this repository OR
-- [Download] (https://www.gitkraken.com/learn/git/github-download) the project as zip
+- [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this repository OR
+- [Download](https://www.gitkraken.com/learn/git/github-download) the project as zip
 
 ### Integrations
 In this section we will elaborate the integration of the automation framework with various cloud execution environment/ device farm. We will showcase the capability of each combination as in-depth analysis of what went well and not, how we navigate through challenges and share some key metrics around each combination.
@@ -170,7 +170,7 @@ To get Security Token:
 ### AWS Device Farm
 AWS Device Farm is an application testing service that lets you improve the quality of your web and mobile apps by testing them across an extensive range of desktop browsers and real mobile devices; without having to provision and manage any testing infrastructure. The service enables you to run your tests concurrently on multiple desktop browsers or real devices to speed up the execution of your test suite, and generates videos and logs to help you quickly identify issues with your app.
 
-Unfortunately, AWS device farm currently doesn't support WebDriverIo native app executions. It supports only desktop broswer testing. Please refer to [docs]: (https://webdriver.io/docs/wdio-aws-device-farm-service/)
+Unfortunately, AWS device farm currently doesn't support WebDriverIo native app executions. It supports only desktop broswer testing. Please refer to [docs](https://webdriver.io/docs/wdio-aws-device-farm-service/)
     
 
 ### Shortcoming 
@@ -186,18 +186,18 @@ Not Applicable. We will update this section if this service is available in the 
  ### Executing test on user local: To execute test using this framework in your local machine, use below command: `npx wdio {config} --spec {filename}`
  
 where:
-- {config} refers to the [scripts] (https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/package.json)
-- {filename} refers to the specific [test] (https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/test/specs). In case you wish to execute all tests under spec folder, please ignore this parameter.
+- {config} refers to the [scripts](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/package.json)
+- {filename} refers to the specific [test](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/test/specs). In case you wish to execute all tests under spec folder, please ignore this parameter.
 
- ### Executing test over CI: To execute test using CI (github here). Follow below steps:
+ ### Executing test over CI: To execute test using CI (we use GitHub here). Follow below steps:
  - Push the framework code to the CI tool
- - Set secrets/environment variables as mentioned in [configs] (https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config) for each cloud vendor in use.
+ - Set secrets/environment variables as mentioned in [configs](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config) for each cloud vendor in use.
  - Navigate to Actions tab in Github account and select the respective CI you wish to execute.
  - Provide appropriate parameters, click Run Workflow and voila!
  
  <a href="https://www.browserstack.com/"><img src="./docs/assets/CI_execution.jpg" alt="ci_execution" height = "360"/>
  
- - Check test results in gh-pages [repository] (https://github.com/mittalyash01/webdriverio-appium-team1/tree/gh-pages/browserstack-results)
+ - Check test results in gh-pages [repository](https://github.com/mittalyash01/webdriverio-appium-team1/tree/gh-pages/browserstack-results)
 and [Allure report] (https://mittalyash01.github.io/webdriverio-appium-team1/browserstack-results/34/)
 
 ## Overall Summary
