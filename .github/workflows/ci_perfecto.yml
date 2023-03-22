@@ -1,8 +1,53 @@
 name: CI perfecto
 on: 
   workflow_dispatch:
-  push:
-    branches: [main]
+    inputs:
+      platform:
+        type: choice
+        description: 'Platform (iOS/Android/both)' 
+        required: false
+        default: android
+        options:
+        - android
+        - ios
+      spec:
+        type: choice
+        default: all
+        options:
+          - 1_LOGIN_valid_user.spec
+          - 2_LOGIN_locked_out_user.spec
+          - 3_LOGIN_invalid_user.spec
+          - 4_PRODUCT_onesie.spec
+          - all
+        description: 'Spec (no file extension needed)'
+        required: false
+      manufacturer:
+        type: choice
+        description: 'Manufacturer'
+        required: false
+        options:
+          - Samsung
+          - Google
+          - Apple
+          - iPhone
+      model:
+        type: choice
+        description: 'Model'
+        required: false
+        options:
+          - Galaxy S9
+          - Galaxy Tab S3 9.7
+          - Pixel 4A \\(5G\\)
+          - iPhone-XR
+          - iPhone-11 Pro
+          - iPhone-13 Mini
+      os_version:
+        description: 'OS version'
+        required: false
+
+permissions:
+  contents: write
+
         
 jobs:
   build:
@@ -16,7 +61,20 @@ jobs:
         - name: Install
           run: npm install
         - name: Test
-          run: npm run test:perfecto:ios
+          run: |
+            if [[ "${{ github.event.inputs.platform }}" == "android" ]]; then
+              if [ "${{ github.event.inputs.spec }}" != 'all'  ]; then
+                npm --manufacturer="${{ github.event.inputs.manufacturer }}" --model="${{ github.event.inputs.model }}" --osversion=${{ github.event.inputs.os_version }} run test:perfecto:android -- --spec=./test/specs/**/${{ github.event.inputs.spec }}.js 
+              else
+                npm --manufacturer="${{ github.event.inputs.manufacturer }}" --model="${{ github.event.inputs.model }}" --osversion=${{ github.event.inputs.os_version }} run test:perfecto:android
+              fi
+            else
+              if [ "${{ github.event.inputs.spec }}" != 'all'  ]; then
+                npm --manufacturer="${{ github.event.inputs.manufacturer }}" --model="${{ github.event.inputs.model }}" --osversion=${{ github.event.inputs.os_version }} run test:perfecto:ios -- --spec=./test/specs/**/${{ github.event.inputs.spec }}.js 
+              else
+                npm --manufacturer="${{ github.event.inputs.manufacturer }}" --model="${{ github.event.inputs.model }}" --osversion=${{ github.event.inputs.os_version }} run test:perfecto:ios
+              fi
+            fi
           env:
             PERFECTO_SECURITY_TOKEN: ${{ secrets.PERFECTO_SECURITY_TOKEN }}
             PERFECTO_IOS_APP: ${{ secrets.PERFECTO_IOS_APP }}
