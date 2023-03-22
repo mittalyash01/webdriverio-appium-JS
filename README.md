@@ -40,11 +40,12 @@ The user must need below software installed in their machine for framework setup
 * [Node JS](https://nodejs.org/en/download/) - Should be V16.x or higher version
 * Java (either from [Oracle](https://www.oracle.com/ca-en/java/technologies/downloads/) or [Open JDK](https://adoptium.net/)) - Version 8 or later
 * [Appium Inspector](https://github.com/appium/appium-inspector/releases)
-Note: Optional (to execute using emulator): [Android Studio](https://developer.android.com/studio)
+
+Optional: [Android Studio](https://developer.android.com/studio)  (to execute tests using emulator)
     
 Your machine should have below minimum configurations:
 
-* OS: Windows 10 or later version || MacOS 10.7 or later version
+* OS: Windows 10 (or later version) or MacOS 10.7 (or later version)
 * Processor: Intel i5 or later version 
 * Memory: 8 GB RAM
 * Hard Disk: 10 GB free space
@@ -58,10 +59,14 @@ Your machine should have below minimum configurations:
 ### Installation and Local setup
 Clone the repository and install the below required packages and drivers through Node JS
 
-- **Install packages**: `npm install @wdio/cli`
+- **Install WebDriverIO**: `npm install @wdio/cli`
+- **Install latest Appium (2.0 version)**: `npm install -g appium@next`
+- **Install latest Appium Doctor**: `npm i -g appium-doctor`
 - **Install driver for Android**: `appium driver install uiautomator2`
 - **Install driver for iOS**: `appium driver install XCUI Test`
+- **To start Appium server**: `appium -p <portID_given_in_appium_inspector>`
 --------------------------------------------------------------------------------------------------
+
 #### Use with Android
 The target android application's apk is available in [app](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/app/android). This apk should be uploaded to the required Cloud automation framework provider website (after creating necessary user profiles)
 
@@ -70,32 +75,33 @@ The target iOS application's apk is available in [app](https://github.com/mittal
 
 ### How to Use
 The below steps should be followed to use the scripts: <To be filled> To be filled
+    
+To execute the test cases, Go to Actions -> CI <provider_name> -> Enable Workflow button -> Run Workflow button. Then enter required parameters and click Run Workflow button to start the execution.
+  
+ <a href="https://www.browserstack.com/"><img src="./docs/assets/CI_execution.jpg" alt="ci_execution" height = "360"/>
 
 ### Integrations
-In this section we will elaborate the integration of the automation framework with various cloud execution environment/ device farm. We will showcase the capability of each combination: in depth analysis of what went good and bad, how we navigate through challenges and share some key metrics around each combination.
+In this section we will elaborate the integration of the automation framework with various cloud execution environment/ device farm. We will showcase the capability of each combination as in-depth analysis of what went well and not, how we navigate through challenges and share some key metrics around each combination.
 
 ### BrowserStack 
 
 [BrowserStack](https://www.browserstack.com/app-live) is a cloud web and mobile testing platform which offers the ability to test websites and mobile applications across on-demand browsers and real mobile devices. The list of supoorted devices and OS versions for Automation are listed [here](https://www.browserstack.com/list-of-browsers-and-platforms/app_automate)
 
-
 To install wdio browserstack service run the command: `npm install @wdio/browserstack-service --save-dev`
 
-As next step, below configuration files should be accessed:
+As next step, below configuration files can be accessed from [here](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config/browserstack) and username and Access key should be updated:
 
 For Android:
 
-![Hackathon-Introduction](./docs/assets/browserstack_android_conf.jpg)
-
+<a href="https://www.browserstack.com/"><img src="./docs/assets/bs_android_conf.jpg" alt="bs_android_conf" height = "260"/>
 
 For iOS:
 
-![Hackathon-Introduction](./docs/assets/browserstack_ios_conf.jpg)
+<a href="https://www.browserstack.com/"><img src="./docs/assets/bs_ios_conf.jpg" alt="bs_ios_conf" height = "260"/>
 
-
-Note: *BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY are stored in environment variables and read from there, these can be obtained from browserstack's website for each users.*
-
-   ![Hackathon-Introduction](./docs/assets/shortcoming_icon.jpg) and   ![Hackathon-Introduction](./docs/assets/positive_outlook.jpg) 
+Note: *BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY are stored in environment variables and these can be obtained from browserstack's website for each registered users.*
+    
+<a href="https://www.browserstack.com/"><img src="./docs/assets/bs_webpage.jpg" alt="bs_webpage" height = "200"/>
 
 | Shortcoming |  Positive outlook |
 | --- | --- |
@@ -103,52 +109,82 @@ Note: *BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY are stored in environme
 | | * Supports parallel runs |
 | | * Supports wide range of devices and OS |
 
+--------------------------------------------------------------------------------------
+
+### SauceLabs
+
+[SauceLabs](https://www.saucelabs.com/) is a cloud-hosted web and mobile application automated testing platform. It provides a wide range of comprehensive test infrastructure for automated and manual testing of mobile applications using Selenium, Appium and JavaScript unit testing frameworks.
+    
+To execute test in SauceLabs, below configuration files can be accessed from [here](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config/saucelabs) and username and Access key should be updated with SauceLabs credentials.
+    
+For Android:
+    
+<a href="https://www.browserstack.com/"><img src="./docs/assets/SC_android_conf.jpg" alt="SC_android_conf" height = "260"/>
+    
+For iOS:
+    
+<a href="https://www.browserstack.com/"><img src="./docs/assets/SC_ios_conf.jpg" alt="SC_ios_conf" height = "260"/>
+
+To get Access key
+    
+<a href="https://www.browserstack.com/"><img src="./docs/assets/SC_webpage.jpg" alt="SC_webpage" height = "200"/>
+    
+### Shortcoming 
 
 
-### Sauce labs
-......
-![Hackathon-Introduction](./docs/assets/saucelabs_ios_conf.jpg)
-
-![Hackathon-Introduction](./docs/assets/saucelabs_android_conf.jpg)
-
-
-### Shortcoming ![Hackathon-Introduction](./docs/assets/shortcoming_icon.jpg)
-
-
-### Positive outlook ![Hackathon-Introduction](./docs/assets/positive_outlook.jpg)
-................
+### Positive outlook 
+    
+    
+-------------------------------------------------------------------------------------------------------------------------------
 
 ### Perfecto
-----------
 
-![Hackathon-Introduction](./docs/assets/Perfecto_android_conf.jpg)
+[Perfecto](https://www.perfecto.io/) is a cloud-based continuous automated testing platform for enterprise mobile and web apps. It features more than 3,000 devices in the cloud which provides the capacity to test for web, mobile and IoT with a single script.
 
-![Hackathon-Introduction](./docs/assets/Perfecto_ios_conf.jpg)
+To execute test in Perfecto, below configuration files can be accessed from [here](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config/perfecto) and host name and Security Token should be updated with Perfecto credentials.
 
+    
+For Android
+    
+ <a href="https://www.browserstack.com/"><img src="./docs/assets/perf_andriod_conf.jpg" alt="perf_andriod_conf" height = "260"/>
 
-### Shortcoming ![Hackathon-Introduction](./docs/assets/shortcoming_icon.jpg)
+For iOS:
+    
+<a href="https://www.browserstack.com/"><img src="./docs/assets/perf_ios_conf.jpg" alt="perf_ios_conf" height = "260"/>
+    
+
+To get Security Token:
+ [image should be uploaded]
+
+### Shortcoming 
 1. Tests executed ok over iOS but same test failed over Android. Have to segregate validation steps as it was not synchronizing both together.
 2. Timeout issue- fixed global timeouts
 3. Need to check device availability every time before executing tests- since these were shared/public devices over the cloud. The device management is not present, could be better from usability POV.
 4. Perfecto doesn't support latest version of WebDriverIO 8.
 5. Time to open a tunnel connection is somewhat longer which is approx~ 15 seconds
 
-### Positive outlook ![Hackathon-Introduction](./docs/assets/positive_outlook.jpg)
-.................
+### Positive outlook 
+    
+[to be updated]
+    
+------------------------------------------------------------------------------------------------------------------------------------------    
 
 ### AWS Device Farm
--------------
 
-### Shortcoming ![Hackathon-Introduction](./docs/assets/shortcoming_icon.jpg)
-................
+    
 
-### Positive outlook ![Hackathon-Introduction](./docs/assets/positive_outlook.jpg)
-.....................
+### Shortcoming 
+
+    ................
+
+### Positive outlook 
+
+    .....................
 
 
 
 ## Running your first test
-...............................
+    ...............................
 `npx wdio {config} --spec {filename}`
 
 ## Overall Summary
