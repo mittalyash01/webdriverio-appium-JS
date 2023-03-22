@@ -24,7 +24,9 @@ This repository is setup as a part of Mobile Test automation hackathon to demons
         1. [AWS Device Farm](#aws-device-farm)
             1. [Positive Outlook](#Positive-outlook)
             1. [Shortcomings](#Shortcomings)
-1. [Running your first test](#running-your-test)
+1. [Executing your first test](#running-your-test)
+        1. [Execute on user local](#Execute-on-user-local)
+        1. [Execute over CI](#Execute-in-CI)
 1. [Overall Summary](#overall-summary)
 1. [Metrics](#Metrics)
 1. [Cloud Service Providers list](#cloud-service-providers)
@@ -81,7 +83,34 @@ The below steps should be followed to use this framework:
 ### Integrations
 In this section we will elaborate the integration of the automation framework with various cloud execution environment/ device farm. We will showcase the capability of each combination as in-depth analysis of what went well and not, how we navigate through challenges and share some key metrics around each combination.
 
-### BrowserStack 
+#### SauceLabs
+
+[SauceLabs](https://www.saucelabs.com/) is a cloud-hosted web and mobile application automated testing platform. It provides a wide range of comprehensive test infrastructure for automated and manual testing of mobile applications using Selenium, Appium and JavaScript unit testing frameworks.
+    
+To execute test in SauceLabs, below configuration files can be accessed from [here](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config/saucelabs) and username and Access key should be updated with SauceLabs credentials.
+    
+For Android:
+    
+<a href="https://www.browserstack.com/"><img src="./docs/assets/SC_android_conf.jpg" alt="SC_android_conf" height = "260"/>
+    
+For iOS:
+    
+<a href="https://www.browserstack.com/"><img src="./docs/assets/SC_ios_conf.jpg" alt="SC_ios_conf" height = "260"/>
+
+To get Access key
+    
+<a href="https://www.browserstack.com/"><img src="./docs/assets/SC_webpage.jpg" alt="SC_webpage" height = "200"/>
+    
+##### Shortcoming 
+
+
+##### Positive outlook 
+    
+    
+-------------------------------------------------------------------------------------------------------------------------------
+
+
+#### BrowserStack 
 
 [BrowserStack](https://www.browserstack.com/app-live) is a cloud web and mobile testing platform which offers the ability to test websites and mobile applications across on-demand browsers and real mobile devices. The list of supoorted devices and OS versions for Automation are listed [here](https://www.browserstack.com/list-of-browsers-and-platforms/app_automate)
 
@@ -109,33 +138,7 @@ Note: *BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY are stored in environme
 
 --------------------------------------------------------------------------------------
 
-### SauceLabs
-
-[SauceLabs](https://www.saucelabs.com/) is a cloud-hosted web and mobile application automated testing platform. It provides a wide range of comprehensive test infrastructure for automated and manual testing of mobile applications using Selenium, Appium and JavaScript unit testing frameworks.
-    
-To execute test in SauceLabs, below configuration files can be accessed from [here](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config/saucelabs) and username and Access key should be updated with SauceLabs credentials.
-    
-For Android:
-    
-<a href="https://www.browserstack.com/"><img src="./docs/assets/SC_android_conf.jpg" alt="SC_android_conf" height = "260"/>
-    
-For iOS:
-    
-<a href="https://www.browserstack.com/"><img src="./docs/assets/SC_ios_conf.jpg" alt="SC_ios_conf" height = "260"/>
-
-To get Access key
-    
-<a href="https://www.browserstack.com/"><img src="./docs/assets/SC_webpage.jpg" alt="SC_webpage" height = "200"/>
-    
-### Shortcoming 
-
-
-### Positive outlook 
-    
-    
--------------------------------------------------------------------------------------------------------------------------------
-
-### Perfecto
+#### Perfecto
 
 [Perfecto](https://www.perfecto.io/) is a cloud-based continuous automated testing platform for enterprise mobile and web apps. It features more than 3,000 devices in the cloud which provides the capacity to test for web, mobile and IoT with a single script.
 
@@ -154,43 +157,43 @@ For iOS:
 To get Security Token:
  [image should be uploaded]
 
-### Shortcoming 
+##### Shortcoming 
 1. Tests executed ok over iOS but same test failed over Android. Have to segregate validation steps as it was not synchronizing both together.
 2. Timeout issue- fixed global timeouts
 3. Need to check device availability every time before executing tests- since these were shared/public devices over the cloud. The device management is not present, could be better from usability POV.
 4. Perfecto doesn't support latest version of WebDriverIO 8.
 5. Time to open a tunnel connection is somewhat longer which is approx~ 15 seconds
 
-### Positive outlook 
+##### Positive outlook 
     
 [to be updated]
     
 ------------------------------------------------------------------------------------------------------------------------------------------    
 
-### AWS Device Farm
+#### AWS Device Farm
 AWS Device Farm is an application testing service that lets you improve the quality of your web and mobile apps by testing them across an extensive range of desktop browsers and real mobile devices; without having to provision and manage any testing infrastructure. The service enables you to run your tests concurrently on multiple desktop browsers or real devices to speed up the execution of your test suite, and generates videos and logs to help you quickly identify issues with your app.
 
 Unfortunately, AWS device farm currently doesn't support WebDriverIo native app executions. It supports only desktop broswer testing. Please refer to [docs](https://webdriver.io/docs/wdio-aws-device-farm-service/)
     
 
-### Shortcoming 
+##### Shortcoming 
 
 Not Applicable. We will update this section if this service is available in the future.
 
-### Positive outlook 
+##### Positive outlook 
 
 Not Applicable. We will update this section if this service is available in the future.
 
 
 ## Executing your first test
- ### Executing test on user local: 
+ ### Execute on user local: 
     To execute test using this framework in your local machine, use following command: `npx wdio {config} --spec {filename}`
  
 where:
 - {config} refers to the [scripts](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/package.json)
 - {filename} refers to the specific [test](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/test/specs). In case you wish to execute all tests under spec folder, please ignore this parameter.
 
- ### Executing test over CI: 
+ ### Execute over CI: 
     To execute test using CI (we use GitHub here). Follow below steps:
  - Push the framework code to the CI tool of your preference.
  - Set secrets/environment variables as mentioned in [configs](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config) for each cloud vendor in use.
@@ -203,11 +206,12 @@ where:
 and [Allure report](https://mittalyash01.github.io/webdriverio-appium-team1/browserstack-results/34/)
 
 ## Overall Summary
-...............................
+Overall WebDriverIO is a stable solution for native mobile application testing. User must have basic JavaScript and npm knowledge to work on this framework.
 
 ## Metrics
------------------------
-
+Below are few key metrics which we catured during our analysis on each tool combination:
+     
+     
 | Test Automation tool stack | Device Farm | Abrupt Connection Loss/ Latencies (Device connection aren't reliable, abruptly the connections are lost during execution (Score out of 10)) | Execution Cycles (Test Case execution time) | Execution Cycles (Test Suite execution time)  | Tool Integrations (Complexity with tool integrations (Low/ Medioum/ High/ Very High) | Framework Stability (% of test cases passed as compared to total number of executions) | Android/iOS version (Tool support for android/iOS versions) | Technical Support (Insufficient support received from vendor) | Technical Support (Native app or list the features not supported by the tool) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |--- |
 | Appium + WebDriverIO | BrowserStack |  |  |  |  |  |  | |  |
