@@ -35,11 +35,12 @@ on:
         description: 'Model'
         required: false
         options:
-          - Galaxy S22
-          - Galaxy Tab S6
-          - Pixel 6 Pro
-          - iPhone 14
-          - iPad 7th
+          - Galaxy S9
+          - Galaxy Tab S3 9.7
+          - Pixel 4A \\(5G\\)
+          - iPhone-XR
+          - iPhone-11 Pro
+          - iPhone-13 Mini
       os_version:
         description: 'OS version'
         required: false
