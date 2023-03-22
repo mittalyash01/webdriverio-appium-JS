@@ -183,22 +183,24 @@ Not Applicable. We will update this section if this service is available in the 
 
 
 ## Executing your first test
- ### Executing test on user local: To execute test using this framework in your local machine, use below command: `npx wdio {config} --spec {filename}`
+ ### Executing test on user local: 
+    To execute test using this framework in your local machine, use following command: `npx wdio {config} --spec {filename}`
  
 where:
 - {config} refers to the [scripts](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/package.json)
 - {filename} refers to the specific [test](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/test/specs). In case you wish to execute all tests under spec folder, please ignore this parameter.
 
- ### Executing test over CI: To execute test using CI (we use GitHub here). Follow below steps:
- - Push the framework code to the CI tool
+ ### Executing test over CI: 
+    To execute test using CI (we use GitHub here). Follow below steps:
+ - Push the framework code to the CI tool of your preference.
  - Set secrets/environment variables as mentioned in [configs](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config) for each cloud vendor in use.
- - Navigate to Actions tab in Github account and select the respective CI you wish to execute.
+ - Navigate to Actions tab (if the tool supports gh-actions) and select the respective CI you wish to execute.
  - Provide appropriate parameters, click Run Workflow and voila!
  
  <a href="https://www.browserstack.com/"><img src="./docs/assets/CI_execution.jpg" alt="ci_execution" height = "360"/>
  
  - Check test results in gh-pages [repository](https://github.com/mittalyash01/webdriverio-appium-team1/tree/gh-pages/browserstack-results)
-and [Allure report] (https://mittalyash01.github.io/webdriverio-appium-team1/browserstack-results/34/)
+and [Allure report](https://mittalyash01.github.io/webdriverio-appium-team1/browserstack-results/34/)
 
 ## Overall Summary
 ...............................
