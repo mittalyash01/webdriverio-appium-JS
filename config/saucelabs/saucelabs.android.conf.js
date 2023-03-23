@@ -21,11 +21,13 @@ config.capabilities = [
     key: process.env.SAUCELABS_ACCESS_KEY || key,
     platformName: 'Android',
     'appium:app': 'storage:filename=Android.SauceLabs.Mobile.Sample.app.2.7.1.apk',
-    'appium:deviceName': 'Samsung.*',
+    "appium:platformVersion" : process.env.npm_config_osversion || '12.0',
+    'appium:deviceName': process.env.npm_config_device || 'Google Pixel 6 Pro GoogleAPI Emulator',
     'appium:automationName': 'UiAutomator2',
     'sauce:options': {
       build: "ANDROID",
       name: "android_test",
+
     }
   }
 ]
