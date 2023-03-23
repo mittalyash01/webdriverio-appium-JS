@@ -26,11 +26,10 @@ on:
         description: 'Device'
         required: false
         options:
-          - Samsung Galaxy Tab S6 GoogleAPI Emulator
-          - Google Pixel 6 Pro GoogleAPI Emulator
-          - iPhone 14 Simulator
-          - iPhone 11 Simulator
-          - iPad (7th generation) Simulator
+          - Samsung Galaxy S9
+          - iPhone 12
+          - iPhone XR
+          - iPad Air 2
       os_version:
         description: 'OS version'
         required: false
