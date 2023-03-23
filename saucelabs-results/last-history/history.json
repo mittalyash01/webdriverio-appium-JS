@@ -1,0 +1,1 @@
+{"2793a248fc1ca8e3b71036a0682fec9c":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"c918dbdfee42f8b5","reportUrl":"https://mittalyash01.github.io/webdriverio-appium-team1/saucelabs-results/30//#testresult/c918dbdfee42f8b5","status":"passed","time":{"start":1679591680501,"stop":1679591698076,"duration":17575}}]}}
