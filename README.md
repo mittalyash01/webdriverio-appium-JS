@@ -219,7 +219,7 @@ Below are few key metrics which we catured during our analysis on each tool comb
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |--- |
 | Appium + WebDriverIO | BrowserStack |  |  |  |  |  |  | |  |
 | Appium + WebDriverIO | Perfecto |  |  |  |  |  |  |  |  |
-| Appium + WebDriverIO | Saucelabs |  |  |  |  |  |  |  |  |
+| Appium + WebDriverIO | Saucelabs | 5 (device availability very sparse) | 14.9s  | 51s | low | 75% | Good on emulators, not good on real devices | N/A | Very limited real device support, mainly emulators |
 | Appium + WebDriverIO | AWS Device Farm |  |  |  |  |  |  |  |  |
 
 ## Cloud Service Providers list
