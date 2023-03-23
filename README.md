@@ -24,7 +24,7 @@ This repository is setup as a part of Mobile Test automation hackathon to demons
         1. [AWS Device Farm](#aws-device-farm)
             1. [Positive Outlook](#Positive-outlook)
             1. [Shortcomings](#Shortcomings)
-1. [Executing your first test](#running-your-test)
+1. [Executing your first test](#executing-your-first-test)
         1. [Execute on user local](#Execute-on-user-local)
         1. [Execute over CI](#Execute-in-CI)
 1. [Overall Summary](#overall-summary)
@@ -187,14 +187,15 @@ Not Applicable. We will update this section if this service is available in the 
 
 ## Executing your first test
  ### Execute on user local: 
-    To execute test using this framework in your local machine, use following command: `npx wdio {config} --spec {filename}`
+    To execute test using this framework in your local machine, use following command:
+    `npx wdio {config} --spec {filename}`
  
 where:
 - {config} refers to the [scripts](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/package.json)
 - {filename} refers to the specific [test](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/test/specs). In case you wish to execute all tests under spec folder, please ignore this parameter.
 
  ### Execute over CI: 
-    To execute test using CI (we use GitHub here). Follow below steps:
+To execute test using CI (we use GitHub here). Follow below steps:
  - Push the framework code to the CI tool of your preference.
  - Set secrets/environment variables as mentioned in [configs](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config) for each cloud vendor in use.
  - Navigate to Actions tab (if the tool supports gh-actions) and select the respective CI you wish to execute.
