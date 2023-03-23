@@ -206,6 +206,8 @@ where:
  - Check test results in gh-pages [repository](https://github.com/mittalyash01/webdriverio-appium-team1/tree/gh-pages/browserstack-results)
 and [Allure report](https://mittalyash01.github.io/webdriverio-appium-team1/browserstack-results/34/)
 
+(https://github.com/mittalyash01/webdriverio-appium-team1/tree/gh-pages/docs/assets/allure_execution_report.jpg)
+
 ## Overall Summary
 Overall WebDriverIO is a stable solution for native mobile application testing. User must have basic JavaScript and npm knowledge to work on this framework.
 
