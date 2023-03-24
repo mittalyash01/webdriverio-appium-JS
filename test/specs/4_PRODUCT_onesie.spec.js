@@ -13,10 +13,10 @@ describe('Hackathon Scenario_4', () => {
 
     const size = await driver.getWindowRect();
     console.log(`SCREEN SIZE: ${size.width}x${size.height}`);
-    start_y = size['height'] * 0.8
-    start_x = size['width'] * 0.5
-    end_x = size['width'] * 0.5
-    end_y = size['height'] * 0.1
+    const start_y = size['height'] * 0.8
+    const start_x = size['width'] * 0.5
+    const end_x = size['width'] * 0.5
+    const end_y = size['height'] * 0.1
 
     await driver.performActions([
       {
@@ -47,7 +47,7 @@ describe('Hackathon Scenario_4', () => {
     await expect(ProductOnesieScreen.onesieTitle).toBeDisplayed();
     await new Promise(f => setTimeout(f, 2000));
 
-/*Cleanup*/
+    // Cleanup
     await ProductListScreen.menuButton.click();
     await SidePanelScreen.logOutButton.click();
     await expect(LoginScreen.usernameField ).toBeDisplayed();

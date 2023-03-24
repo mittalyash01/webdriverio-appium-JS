@@ -1,7 +1,7 @@
 
 class ProductOnesieScreen {
   get onesieTitle() {
-    return $('//*[@content-desc="Sauce Labs Onesie" or @name="Sauce Labs Onesie"]');
+    return $('//*[@text="Sauce Labs Onesie" or @label="Sauce Labs Onesie"]');
   }
 }
 
