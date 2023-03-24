@@ -86,7 +86,10 @@ In this section we will elaborate the integration of the automation framework wi
 #### SauceLabs
 
 [SauceLabs](https://www.saucelabs.com/) is a cloud-hosted web and mobile application automated testing platform. It provides a wide range of comprehensive test infrastructure for automated and manual testing of mobile applications using Selenium, Appium and JavaScript unit testing frameworks.
-    
+
+To install wdio saucelabs service run the command:
+`npm install wdio-sauce-service --save-dev`
+
 To execute test in SauceLabs, below configuration files can be accessed from [here](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config/saucelabs) and username and Access key should be updated with SauceLabs credentials.
     
 For Android:
@@ -114,7 +117,8 @@ To get Access key
 
 [BrowserStack](https://www.browserstack.com/app-live) is a cloud web and mobile testing platform which offers the ability to test websites and mobile applications across on-demand browsers and real mobile devices. The list of supoorted devices and OS versions for Automation are listed [here](https://www.browserstack.com/list-of-browsers-and-platforms/app_automate)
 
-To install wdio browserstack service run the command: `npm install @wdio/browserstack-service --save-dev`
+To install wdio browserstack service run the command:
+`npm install @wdio/browserstack-service --save-dev`
 
 As next step, below configuration files can be accessed from [here](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config/browserstack) and username and Access key should be updated:
 
@@ -141,6 +145,9 @@ Note: *BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY are stored in environme
 #### Perfecto
 
 [Perfecto](https://www.perfecto.io/) is a cloud-based continuous automated testing platform for enterprise mobile and web apps. It features more than 3,000 devices in the cloud which provides the capacity to test for web, mobile and IoT with a single script.
+
+To install wdio perfecto service run the command: 
+`npm install wdio-perfecto-service --save-dev`
 
 To execute test in Perfecto, below configuration files can be accessed from [here](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config/perfecto) and host name and Security Token should be updated with Perfecto credentials.
 
@@ -186,7 +193,7 @@ Not Applicable. We will update this section if this service is available in the 
 
 
 ## Executing your first test
- ### Execute on user local: 
+### Execute on user local: 
  To execute test using this framework in your local machine, use following command:
     `npx wdio {config} --spec {filename}`
  
@@ -194,7 +201,7 @@ where:
 - {config} refers to the [scripts](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/package.json)
 - {filename} refers to the specific [test](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/test/specs). In case you wish to execute all tests under spec folder, please ignore this parameter.
 
- ### Execute over CI: 
+### Execute over CI: 
  To execute test using CI (we use GitHub here). Follow below steps:
  - Push the framework code to the CI tool of your preference.
  - Set secrets/environment variables as mentioned in [configs](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config) for each cloud vendor in use.
