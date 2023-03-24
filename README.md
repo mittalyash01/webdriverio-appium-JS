@@ -227,7 +227,7 @@ Below are few key metrics which we catured during our analysis on each tool comb
 | Appium + WebDriverIO | BrowserStack |  |  |  |  |  |  | |  |
 | Appium + WebDriverIO | Perfecto | 6 (device availability is an issue) | 66.68s (iOS) 48.11s (Android) | 274.3s  (iOS) 185.7s (Android) | low  | 75% | Good on Android but not on iOS | Good documentation | N/A |
 | Appium + WebDriverIO | Saucelabs | 5 (device availability very sparse) | 14.9s  | 51s | low | 75% | Good on emulators, not good on real devices | N/A | Very limited real device support, mainly emulators |
-| Appium + WebDriverIO | AWS Device Farm |  |  |  |  |  |  |  |  |
+| Appium + WebDriverIO | AWS Device Farm | 1 (Able to connect but no support for native mobile app testing)  | No Support | No Support | No Support | No Support | No Support  | No Support | No Support |
 
 ## Cloud Service Providers list
 
