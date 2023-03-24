@@ -108,6 +108,7 @@ To get Access key
 1. Easy to integrate
 2. Trial version supports 160 mins of free usage on max of 2 real devices in parallel
 3. Able to use the same script for both Android and iOS testing
+4. Good documentation from the vendor on tool integration
     
 ##### Shortcoming 
 1. Limited collection of Real Devices availability
@@ -143,6 +144,7 @@ Note: *BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY are stored in environme
 3. Trial version supports 100 mins of free usage on wide range of  devices
 4. Detailed reporting
 5. Able to use the same script for both Android and iOS testing
+6. Good documentation from the vendor on tool integration
  
 ##### Shortcoming 
 NONE
@@ -172,20 +174,20 @@ To get Security Token:
  [image should be uploaded]
 
 ##### Positive outlook
+    
 1. Good documentation from the vendor on tool integration
 2. Easy to integrate
 3. Trial version supports 14 days of free usage on a range of Android and iOS with parallel run on 2 real devices
 4. Able to use the same script for both Android and iOS testing with minor tweaks
  
 ##### Shortcoming 
+    
 1. High execution turnaround time. 3-5 x as compared to other solutions
 2. Takes very long to open a tunnel connection (~ 30 seconds)
 3. Doesn’t support latest version of WebDriver IO 8
 4. Need to set high timeout to prevent failing
-5. Need to check device availability every time before executing tests- since these were shared/public devices over the cloud. The device management is not present, could be better from usability point of view
-
-    
-[to be updated]
+5. Need to check device availability every time before executing tests- since these were shared/public devices over the cloud. 
+6. The device management console is not present, could be better from usability point of view.
     
 ------------------------------------------------------------------------------------------------------------------------------------------    
 
@@ -199,6 +201,7 @@ Unfortunately, AWS device farm currently doesn't support WebDriverIo native app 
 Not Applicable. We will update this section if this service is available in the future.
     
 ##### Shortcoming 
+    
 1. Need to upload the entire framework in zip format, there is no provision of tunnel execution through local or CI.
 2. Very less documentation, support available.
 3. Not a user friendly solution, could have done better.
