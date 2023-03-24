@@ -225,7 +225,9 @@ Below are few key metrics which we catured during our analysis on each tool comb
 | Test Automation tool stack | Device Farm | Abrupt Connection Loss/ Latencies (Device connection aren't reliable, abruptly the connections are lost during execution (Score out of 10)) | Execution Cycles (Test Case execution time) | Execution Cycles (Test Suite execution time)  | Tool Integrations (Complexity with tool integrations (Low/ Medioum/ High/ Very High) | Framework Stability (% of test cases passed as compared to total number of executions) | Android/iOS version (Tool support for android/iOS versions) | Technical Support (Insufficient support received from vendor) | Technical Support (Native app or list the features not supported by the tool) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |--- |
 | Appium + WebDriverIO | BrowserStack |  |  |  |  |  |  | |  |
-| Appium + WebDriverIO | Perfecto |  |  |  |  |  |  |  |  |
+| Appium + WebDriverIO | Perfecto | 6 (device availability is an issue) | 66.68s (iOS)​
+    48.11s (Android)​ | 274.3s  (iOS)​
+   185.7s (Android)​ | low  | 75% | Good on Android but not on iOS | Good documentation | N/A |
 | Appium + WebDriverIO | Saucelabs | 5 (device availability very sparse) | 14.9s  | 51s | low | 75% | Good on emulators, not good on real devices | N/A | Very limited real device support, mainly emulators |
 | Appium + WebDriverIO | AWS Device Farm |  |  |  |  |  |  |  |  |
 
