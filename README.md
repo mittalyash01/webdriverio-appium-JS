@@ -104,10 +104,13 @@ To get Access key
     
 <a href="https://www.browserstack.com/"><img src="./docs/assets/SC_webpage.jpg" alt="SC_webpage" height = "200"/>
     
-##### Shortcoming 
-
-
 ##### Positive outlook 
+1. Easy to integrate
+2. Trial version supports 160 mins of free usage on max of 2 real devices in parallel
+3. Able to use the same script for both Android and iOS testing
+    
+##### Shortcoming 
+1. Limited collection of Real Devices availability
     
     
 -------------------------------------------------------------------------------------------------------------------------------
@@ -134,11 +137,15 @@ Note: *BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY are stored in environme
     
 <a href="https://www.browserstack.com/"><img src="./docs/assets/bs_webpage.jpg" alt="bs_webpage" height = "200"/>
 
-| Shortcoming |  Positive outlook |
-| --- | --- |
-| * Not any significant issues | * Easy to integrate |
-| | * Supports parallel runs |
-| | * Supports wide range of devices and OS |
+##### Positive outlook
+1. Easy to integrate
+2. Comparatively it has large collection of Real devices
+3. Trial version supports 100 mins of free usage on wide range of  devices
+4. Detailed reporting
+5. Able to use the same script for both Android and iOS testing
+ 
+##### Shortcoming 
+NONE
 
 --------------------------------------------------------------------------------------
 
@@ -164,14 +171,19 @@ For iOS:
 To get Security Token:
  [image should be uploaded]
 
+##### Positive outlook
+1. Good documentation from the vendor on tool integration
+2. Easy to integrate
+3. Trial version supports 14 days of free usage on a range of Android and iOS with parallel run on 2 real devices
+4. Able to use the same script for both Android and iOS testing with minor tweaks
+ 
 ##### Shortcoming 
-1. Tests executed ok over iOS but same test failed over Android. Have to segregate validation steps as it was not synchronizing both together.
-2. Timeout issue- fixed global timeouts
-3. Need to check device availability every time before executing tests- since these were shared/public devices over the cloud. The device management is not present, could be better from usability POV.
-4. Perfecto doesn't support latest version of WebDriverIO 8.
-5. Time to open a tunnel connection is somewhat longer which is approx~ 15 seconds
+1. High execution turnaround time. 3-5 x as compared to other solutions
+2. Takes very long to open a tunnel connection (~ 30 seconds)
+3. Doesn’t support latest version of WebDriver IO 8
+4. Need to set high timeout to prevent failing
+5. Need to check device availability every time before executing tests- since these were shared/public devices over the cloud. The device management is not present, could be better from usability point of view
 
-##### Positive outlook 
     
 [to be updated]
     
@@ -182,14 +194,14 @@ AWS Device Farm is an application testing service that lets you improve the qual
 
 Unfortunately, AWS device farm currently doesn't support WebDriverIo native app executions. It supports only desktop broswer testing. Please refer to [docs](https://webdriver.io/docs/wdio-aws-device-farm-service/)
     
-
-##### Shortcoming 
-
-Not Applicable. We will update this section if this service is available in the future.
-
 ##### Positive outlook 
 
 Not Applicable. We will update this section if this service is available in the future.
+    
+##### Shortcoming 
+1. Need to upload the entire framework in zip format, there is no provision of tunnel execution through local or CI.
+2. Very less documentation, support available.
+3. Not a user friendly solution, could have done better.
 
 
 ## Executing your first test
