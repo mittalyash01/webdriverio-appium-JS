@@ -41,6 +41,8 @@ The user must need below software installed in their machine for framework setup
 
 * [Node JS](https://nodejs.org/en/download/) - Should be V16.x or higher version
 * Java (either from [Oracle](https://www.oracle.com/ca-en/java/technologies/downloads/) or [Open JDK](https://adoptium.net/)) - Version 8 or later
+* Appium (any version can be used; in this project Appium 2.0 version was used)
+* Appium Doctor
 * [Appium Inspector](https://github.com/appium/appium-inspector/releases)
 
 Optional: [Android Studio](https://developer.android.com/studio)  (to execute tests using emulator)
@@ -67,6 +69,8 @@ Clone the repository and install the below required packages and drivers through
 - **Install driver for Android**: `appium driver install uiautomator2`
 - **Install driver for iOS**: `appium driver install XCUI Test`
 - **To start Appium server**: `appium -p <portID_given_in_appium_inspector>`
+
+
 --------------------------------------------------------------------------------------------------
 
 #### Use with Android
@@ -77,7 +81,7 @@ The target iOS application's apk is available in [app](https://github.com/mittal
 
 ### How to Use
 The below steps should be followed to use this framework:
-- [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this repository OR
+- [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) this repository (or)
 - [Download](https://www.gitkraken.com/learn/git/github-download) the project as zip
 
 ### Integrations
@@ -94,15 +98,15 @@ To execute test in SauceLabs, below configuration files can be accessed from [he
     
 For Android:
     
-<a href="https://www.browserstack.com/"><img src="./docs/assets/SC_android_conf.jpg" alt="SC_android_conf" height = "260"/>
+<img src="./docs/assets/SC_android_conf.jpg" alt="SC_android_conf" height = "260"/>
     
 For iOS:
     
-<a href="https://www.browserstack.com/"><img src="./docs/assets/SC_ios_conf.jpg" alt="SC_ios_conf" height = "260"/>
+<img src="./docs/assets/SC_ios_conf.jpg" alt="SC_ios_conf" height = "260"/>
 
-To get Access key
+The SauceLabs Access key can be obtained from below page (after logging into the site):
     
-<a href="https://www.browserstack.com/"><img src="./docs/assets/SC_webpage.jpg" alt="SC_webpage" height = "200"/>
+<img src="./docs/assets/SC_webpage.jpg" alt="SC_webpage" height = "200"/>
     
 ##### Positive outlook 
 1. Easy to integrate
@@ -128,15 +132,15 @@ As next step, below configuration files can be accessed from [here](https://gith
 
 For Android:
 
-<a href="https://www.browserstack.com/"><img src="./docs/assets/bs_android_conf.jpg" alt="bs_android_conf" height = "260"/>
+<img src="./docs/assets/bs_android_conf.jpg" alt="bs_android_conf" height = "260"/>
 
 For iOS:
 
-<a href="https://www.browserstack.com/"><img src="./docs/assets/bs_ios_conf.jpg" alt="bs_ios_conf" height = "260"/>
+<img src="./docs/assets/bs_ios_conf.jpg" alt="bs_ios_conf" height = "260"/>
 
-Note: *BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY are stored in environment variables and these can be obtained from browserstack's website for each registered users.*
+The BrowserStack Username and Access key can be obtained from below page (after logging into the site):
     
-<a href="https://www.browserstack.com/"><img src="./docs/assets/bs_webpage.jpg" alt="bs_webpage" height = "200"/>
+<img src="./docs/assets/bs_webpage.jpg" alt="bs_webpage" height = "200"/>
 
 ##### Positive outlook
 1. Easy to integrate
@@ -170,8 +174,9 @@ For iOS:
 <a href="https://www.browserstack.com/"><img src="./docs/assets/perf_ios_conf.jpg" alt="perf_ios_conf" height = "260"/>
     
 
-To get Security Token:
- [image should be uploaded]
+The Perfecto Security Token can be obtained from below page (after logging into the site):
+    
+<img src="./docs/assets/perf_webpage.jpg" alt="perf_webpage" height = "220"/>
 
 ##### Positive outlook
     
@@ -192,7 +197,7 @@ To get Security Token:
 ------------------------------------------------------------------------------------------------------------------------------------------    
 
 #### AWS Device Farm
-AWS Device Farm is an application testing service that lets you improve the quality of your web and mobile apps by testing them across an extensive range of desktop browsers and real mobile devices; without having to provision and manage any testing infrastructure. The service enables you to run your tests concurrently on multiple desktop browsers or real devices to speed up the execution of your test suite, and generates videos and logs to help you quickly identify issues with your app.
+[AWS Device Farm](https://aws.amazon.com/device-farm/) is an application testing service that lets you improve the quality of your web and mobile apps by testing them across an extensive range of desktop browsers and real mobile devices; without having to provision and manage any testing infrastructure. The service enables you to run your tests concurrently on multiple desktop browsers or real devices to speed up the execution of your test suite, and generates videos and logs to help you quickly identify issues with your app.
 
 Unfortunately, AWS device farm currently doesn't support WebDriverIo native app executions. It supports only desktop broswer testing. Please refer to [docs](https://webdriver.io/docs/wdio-aws-device-farm-service/)
     
@@ -223,7 +228,7 @@ where:
  - Navigate to Actions tab (if the tool supports gh-actions) and select the respective CI you wish to execute.
  - Provide appropriate parameters, click Run Workflow and voila!
  
- <a href="https://www.browserstack.com/"><img src="./docs/assets/CI_execution.jpg" alt="ci_execution" height = "360"/>
+ <img src="./docs/assets/CI_execution.jpg" alt="ci_execution" height = "360"/>
  
  - Check test results in gh-pages [repository](https://github.com/mittalyash01/webdriverio-appium-team1/tree/gh-pages/browserstack-results)
 and [Allure report](https://mittalyash01.github.io/webdriverio-appium-team1/browserstack-results/34/)
@@ -237,13 +242,18 @@ Overall WebDriverIO is a stable solution for native mobile application testing. 
 Below are few key metrics which we catured during our analysis on each tool combination:
      
      
-| Test Automation tool stack | Device Farm | Abrupt Connection Loss/ Latencies (Device connection aren't reliable, abruptly the connections are lost during execution (Score out of 10)) | Execution Cycles (Test Case execution time) | Execution Cycles (Test Suite execution time)  | Tool Integrations (Complexity with tool integrations (Low/ Medioum/ High/ Very High) | Framework Stability (% of test cases passed as compared to total number of executions) | Android/iOS version (Tool support for android/iOS versions) | Technical Support (Insufficient support received from vendor) | Technical Support (Native app or list the features not supported by the tool) |
+| Test Automation tool stack | Device Farm | Abrupt Connection Loss/ Latencies<sup>1</sup> (Score out of 10) | Execution Cycles (Test Case execution time in sec) | Execution Cycles (Test Suite execution time in sec)  | Tool Integrations Complexity<sup>2</sup> | Framework Stability<sup>3</sup> | Tool support for Android/iOS versions | Technical Support received from vendor | Technical Support<sup>4</sup> |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |--- |
-| Appium + WebDriverIO | BrowserStack | 9 | 41s (iOS) 61s(Android) | 178s(Android) 186s(iOS) | Low | 100% | Good for both | Good Documentation | N/A |
-| Appium + WebDriverIO | Perfecto | 6 (device availability is an issue) | 66.68s (iOS) 48.11s (Android) | 274.3s  (iOS) 185.7s (Android) | low  | 75% | Good on Android but not on iOS | Good documentation | N/A |
-| Appium + WebDriverIO | Saucelabs | 5 (device availability very sparse) | 14.9s  | 51s | low | 75% | Good on emulators, not good on real devices | N/A | Very limited real device support, mainly emulators |
+| Appium + WebDriverIO | BrowserStack | 9 | 41 (iOS) 61 (Android) | 178 (Android) 186 (iOS) | Low | 100% | Good for both | Good Documentation | N/A |
+| Appium + WebDriverIO | Perfecto | 6 (device availability is an issue) | 66.68 (iOS) 48.11 (Android) | 274.3  (iOS) 185.7 (Android) | low  | 75% | Good on Android but not on iOS | Good documentation | N/A |
+| Appium + WebDriverIO | Saucelabs | 5 (device availability very sparse) | 14.9  | 51 | low | 75% | Good on emulators, not good on real devices | N/A | Very limited real device support, mainly emulators |
 | Appium + WebDriverIO | AWS Device Farm | 1 (Able to connect but no support for native mobile app testing)  | No Support | No Support | No Support | No Support | No Support  | No Support | No Support |
 
+<sup>1</sup> - Device connection aren't reliable, abruptly the connections are lost during execution    
+<sup>2</sup> - Complexity levels - Low/ Medioum/ High/ Very High  
+<sup>3</sup> - % of test cases passed as compared to total number of executions  
+<sup>4</sup> - Native app or list the features not supported by the tool
+    
 ## Cloud Service Providers list
 
 <a href="https://www.browserstack.com/"><img src="./docs/assets/BrowserStack_Logo_2.jpg" alt="browserstack" height = "60"/>
