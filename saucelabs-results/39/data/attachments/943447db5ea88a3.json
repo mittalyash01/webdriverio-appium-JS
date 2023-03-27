@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//*[@content-desc=\"test-LOGOUT\" or @name=\"test-LOGOUT\"]"
+}
