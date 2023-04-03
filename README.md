@@ -242,14 +242,14 @@ Overall WebDriverIO is a stable solution for native mobile application testing. 
 Below are few key metrics which we catured during our analysis on each tool combination:
      
      
-| Test Automation tool stack | Device Farm | Abrupt Connection Loss/ Latencies<sup>1</sup> (Score out of 10) | Execution Cycles (Test Case execution time in sec) | Execution Cycles (Test Suite execution time in sec)  | Tool Integrations Complexity<sup>2</sup> | Framework Stability<sup>3</sup> | Tool support for Android/iOS versions | Technical Support received from vendor | Technical Support<sup>4</sup> |
+| Test Automation tool stack | Device Farm | Connection Time<sup>1</sup> (in seconds) | Execution Cycles (Test Case execution time in sec) | Execution Cycles (Test Suite execution time in sec)  | Tool Integrations Complexity<sup>2</sup> | Framework Stability<sup>3</sup> | Tool support for Android/iOS versions | Technical Support received from vendor | Technical Support<sup>4</sup> |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |--- |
 | Appium + WebDriverIO | BrowserStack | 9 | 41 (iOS) 61 (Android) | 178 (Android) 186 (iOS) | Low | 100% | Good for both | Good Documentation | N/A |
-| Appium + WebDriverIO | Perfecto | 6 (device availability is an issue) | 66.68 (iOS) 48.11 (Android) | 274.3  (iOS) 185.7 (Android) | low  | 75% | Good on Android but not on iOS | Good documentation | N/A |
-| Appium + WebDriverIO | Saucelabs | 5 (device availability very sparse) | 38 (iOS) 40 (Android) | 238s (iOS) 336s (Android) | low | 75% | Good on emulators, not good on real devices | N/A | Very limited real device support, mainly emulators |
-| Appium + WebDriverIO | AWS Device Farm | 1 (Able to connect but no support for native mobile app testing)  | No Support | No Support | No Support | No Support | No Support  | No Support | No Support |
+| Appium + WebDriverIO | Perfecto | 6  | 66.68 (iOS) 48.11 (Android) | 274.3  (iOS) 185.7 (Android) | low  | 75% | Good on Android but not on iOS | Good documentation | N/A |
+| Appium + WebDriverIO | Saucelabs | 5  | 38 (iOS) 40 (Android) | 238s (iOS) 336s (Android) | low | 75% | Good on emulators, not good on real devices | N/A | Very limited real device support, mainly emulators |
+| Appium + WebDriverIO | AWS Device Farm | 1  | No Support | No Support | No Support | No Support | No Support  | No Support | No Support |
 
-<sup>1</sup> - Device connection aren't reliable, abruptly the connections are lost during execution    
+<sup>1</sup> - Device connection time during execution   
 <sup>2</sup> - Complexity levels - Low/ Medioum/ High/ Very High  
 <sup>3</sup> - % of test cases passed as compared to total number of executions  
 <sup>4</sup> - Native app or list the features not supported by the tool
