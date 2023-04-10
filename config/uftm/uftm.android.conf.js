@@ -1,7 +1,7 @@
 const path = require('path');
 const { config } = require('../wdio.shared.conf');
-const userName = 'yashshvi.a.mittal@accenture.com';
-const password= 'Welc0me' ;
+const userName = '';
+const password= '' ;
 const host= 'uftm-accenture';
 
 config.protocol = 'https';
