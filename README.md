@@ -1,7 +1,7 @@
-![Hackathon-Introduction](./docs/assets/Hackathon_bg2.jpg)
+![Hackathon-Introduction](./docs/assets/Hackathon_bg3.jpg)
 
 # Mobile Hackathon: Introduction
-This repository is setup as a part of Mobile Test automation hackathon to demonstrate the capabilities of [WebDriverIO](https://webdriver.io/) test automation framework. The team has setup WebDriverIO for mobile native app test automation with libraries/tools such as- [mocha](https://mochajs.org/) framework, [Appium](https://appium.io) for mobile automation, [Allure Reporter](https://webdriver.io/docs/allure-reporter/) for robust reporting. We also demonstrated and compared the capabilities of integrating this framework with cloud execution environments such as- [BrowserStack](https://www.browserstack.com/), [Saucelabs](https://saucelabs.com/), [Perfecto](https://www.perfecto.io/) and [AWS Device Farm](https://aws.amazon.com/device-farm/).
+This repository is setup as a part of Mobile Test automation hackathon to demonstrate the capabilities of [WebDriverIO](https://webdriver.io/) test automation framework. The team has setup WebDriverIO for mobile native app test automation with libraries/tools such as- [mocha](https://mochajs.org/) framework, [Appium](https://appium.io) for mobile automation, [Allure Reporter](https://webdriver.io/docs/allure-reporter/) for robust reporting. We also demonstrated and compared the capabilities of integrating this framework with cloud execution environments such as- [BrowserStack](https://www.browserstack.com/), [Saucelabs](https://saucelabs.com/), [Perfecto](https://www.perfecto.io/), [UFT Mobile](https://admhelp.microfocus.com/uftmobile/en/2023/Content/Intro.htm) and [AWS Device Farm](https://aws.amazon.com/device-farm/).
 
 ## Table of contents
 1. [Getting Started](#getting-started)
@@ -168,7 +168,7 @@ To install wdio perfecto service run the command:
 To execute test in Perfecto, below configuration files can be accessed from [here](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config/perfecto) and host name and Security Token should be updated with Perfecto credentials.
 
     
-For Android
+For Android:
     
  <a href="https://www.browserstack.com/"><img src="./docs/assets/perf_andriod_conf.jpg" alt="perf_andriod_conf" height = "260"/>
 
@@ -208,13 +208,13 @@ No installation required, UFT Mobile uses native Appium to connect and execute t
 To execute test in UFTM, below configuration files can be accessed from [here](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config/uftm) and User name and Security Token/ password should be updated with UFTM credentials.
 
     
-For Android
+For Android:
     
- <a href="https://www.browserstack.com/"><img src="./docs/assets/uftm_andriod_conf.jpg" alt="perf_andriod_conf" height = "260"/>
+ <img src="./docs/assets/UFT_Android_conf.jpg" alt="uft_andriod_conf" height = "500" width = "500"/>
 
 For iOS:
     
-<a href="https://www.browserstack.com/"><img src="./docs/assets/uftm_ios_conf.jpg" alt="perf_ios_conf" height = "260"/>
+<img src="./docs/assets/UFT_iOS_conf.jpg" alt="uft_ios_conf" height = "500" width = "500"/>
     
 
 The UFTM Security Token is shared by the vendor and one can also setup Oauth token for authentication.
@@ -302,5 +302,7 @@ Below are few key metrics which we catured during our analysis on each tool comb
 <a href="https://www.browserstack.com/"><img src="./docs/assets/BrowserStack_Logo_2.jpg" alt="browserstack" height = "60"/>
 <a href="https://saucelabs.com/"><img src="./docs/assets/saucelabs_icon.jpg" alt="saucelabs" height = "60"/>
 <a href="https://www.perfecto.io//"><img src="./docs/assets/perfecto_icon.jpg" alt="perfecto" height = "60"/>
+<a href="https://admhelp.microfocus.com/uftmobile/en/2023/Content/Intro.htm"><img src="./docs/assets/UFT_Logo.png" alt="uft" height = "60"/>
 <a href="https://aws.amazon.com/device-farm/"><img src="./docs/assets/aws_logo.jpg" alt="aws" height = "60"/>
+
 
