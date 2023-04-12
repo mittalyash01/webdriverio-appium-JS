@@ -21,7 +21,7 @@ This repository is setup as a part of Mobile Test automation hackathon to demons
         1. [Perfecto](#Perfecto)
             1. [Positive Outlook](#Positive-outlook)
             1. [Shortcomings](#Shortcomings)
-        1. [UFT Mobile](#UFT Mobile)
+        1. [UFT Mobile](#UFT-Mobile)
             1. [Positive Outlook](#Positive-outlook)
             1. [Shortcomings](#Shortcomings)
         1. [AWS Device Farm](#aws-device-farm)
@@ -201,7 +201,7 @@ The Perfecto Security Token can be obtained from below page (after logging into 
 
 #### UFT Mobile
 
-[UFT Mobile](https://www.perfecto.io/](https://admhelp.microfocus.com/uftmobile/en/2023/Content/Intro.htm) Micro Focus Digital Lab (formerly known as UFT Mobile) provides an end-to-end quality lab of real devices, emulators, and browsers that help you test, monitor, and optimize your mobile apps for an enhanced user experience.
+[UFT-Mobile](https://www.perfecto.io/](https://admhelp.microfocus.com/uftmobile/en/2023/Content/Intro.htm) Micro Focus Digital Lab (formerly known as UFT Mobile) provides an end-to-end quality lab of real devices, emulators, and browsers that help you test, monitor, and optimize your mobile apps for an enhanced user experience.
 
 No installation required, UFT Mobile uses native Appium to connect and execute tests.
 
