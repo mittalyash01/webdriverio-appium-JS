@@ -232,7 +232,7 @@ The UFTM Security Token is shared by the vendor and one can also setup Oauth tok
 1. No proper documentation by vendor on tool integration
 2. Very limited community support
 3. Little complex to integrate when compared to other providers
-4. No recording feature enabled by default
+4. No test execution recording feature enabled for Appium
 5. Limited devices and OS versions available
 6. Need to request vendor for providing trial version and high turn around time
     
