@@ -21,6 +21,9 @@ This repository is setup as a part of Mobile Test automation hackathon to demons
         1. [Perfecto](#Perfecto)
             1. [Positive Outlook](#Positive-outlook)
             1. [Shortcomings](#Shortcomings)
+        1. [UFT Mobile](#UFT Mobile)
+            1. [Positive Outlook](#Positive-outlook)
+            1. [Shortcomings](#Shortcomings)
         1. [AWS Device Farm](#aws-device-farm)
             1. [Positive Outlook](#Positive-outlook)
             1. [Shortcomings](#Shortcomings)
@@ -196,6 +199,45 @@ The Perfecto Security Token can be obtained from below page (after logging into 
     
 ------------------------------------------------------------------------------------------------------------------------------------------    
 
+#### UFT Mobile
+
+[UFT Mobile](https://www.perfecto.io/](https://admhelp.microfocus.com/uftmobile/en/2023/Content/Intro.htm) Micro Focus Digital Lab (formerly known as UFT Mobile) provides an end-to-end quality lab of real devices, emulators, and browsers that help you test, monitor, and optimize your mobile apps for an enhanced user experience.
+
+No installation required, UFT Mobile uses native Appium to connect and execute tests.
+
+To execute test in UFTM, below configuration files can be accessed from [here](https://github.com/mittalyash01/webdriverio-appium-team1/tree/main/config/uftm) and User name and Security Token/ password should be updated with UFTM credentials.
+
+    
+For Android
+    
+ <a href="https://www.browserstack.com/"><img src="./docs/assets/uftm_andriod_conf.jpg" alt="perf_andriod_conf" height = "260"/>
+
+For iOS:
+    
+<a href="https://www.browserstack.com/"><img src="./docs/assets/uftm_ios_conf.jpg" alt="perf_ios_conf" height = "260"/>
+    
+
+The UFTM Security Token is shared by the vendor and one can also setup Oauth token for authentication.
+
+
+##### Positive outlook
+    
+1. Faster and smoother executions
+2. Good features such as reserve device, OAuth authentication
+3. Limited parallel execution capability
+4. Able to use the same script for both Android and iOS testing with minor tweaks
+ 
+##### Shortcoming 
+    
+1. No proper documentation by vendor on tool integration
+2. Very limited community support
+3. Little complex to integrate when compared to other providers
+4. No recording feature enabled by default
+5. Limited devices and OS versions available
+6. Need to request vendor for providing trial version and high turn around time
+    
+------------------------------------------------------------------------------------------------------------------------------------------    
+    
 #### AWS Device Farm
 [AWS Device Farm](https://aws.amazon.com/device-farm/) is an application testing service that lets you improve the quality of your web and mobile apps by testing them across an extensive range of desktop browsers and real mobile devices; without having to provision and manage any testing infrastructure. The service enables you to run your tests concurrently on multiple desktop browsers or real devices to speed up the execution of your test suite, and generates videos and logs to help you quickly identify issues with your app.
 
@@ -244,10 +286,11 @@ Below are few key metrics which we catured during our analysis on each tool comb
      
 | Test Automation tool stack | Device Farm | Connection Time<sup>1</sup> (in seconds) | Execution Cycles (Test Case execution time in sec) | Execution Cycles (Test Suite execution time in sec)  | Tool Integrations Complexity<sup>2</sup> | Framework Stability<sup>3</sup> | Tool support for Android/iOS versions | Technical Support received from vendor | Technical Support<sup>4</sup> |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |--- |
-| Appium + WebDriverIO | BrowserStack | 9 | 41 (iOS) 61 (Android) | 178 (Android) 186 (iOS) | Low | 100% | Good for both | Good Documentation | N/A |
-| Appium + WebDriverIO | Perfecto | 6  | 66.68 (iOS) 48.11 (Android) | 274.3  (iOS) 185.7 (Android) | low  | 75% | Good on Android but not on iOS | Good documentation | N/A |
-| Appium + WebDriverIO | Saucelabs | 5  | 38 (iOS) 40 (Android) | 238s (iOS) 336s (Android) | low | 75% | Good on emulators, not good on real devices | N/A | Very limited real device support, mainly emulators |
-| Appium + WebDriverIO | AWS Device Farm | 1  | No Support | No Support | No Support | No Support | No Support  | No Support | No Support |
+| Appium + WebDriverIO | BrowserStack | 10 | 41 (iOS) 61 (Android) | 178 (Android) 186 (iOS) | Low | 100% | Good for both | Good Documentation | N/A |
+| Appium + WebDriverIO | Perfecto | 25  | 66.68 (iOS) 48.11 (Android) | 274.3  (iOS) 185.7 (Android) | low  | 75% | Good on Android but not on iOS | Good documentation | N/A |
+| Appium + WebDriverIO | Saucelabs | 16  | 38 (iOS) 40 (Android) | 238s (iOS) 336s (Android) | low | 75% | Good on emulators, not good on real devices | N/A | Very limited real device support, mainly emulators |
+| Appium + WebDriverIO | AWS Device Farm | No native app support (Only web support)  | No Support | No Support | No Support | No Support | No Support  | No Support | No Support |
+| Appium + WebDriverIO | UFT Mobile | 10  | 42.7 sec (iOS) 31 sec (Android) | 181 sec (iOS)  156 sec (Android) | High | 100% | Good for both  | No proper documentation around node.js integration, but good customer support | N/A |
 
 <sup>1</sup> - Device connection time during execution   
 <sup>2</sup> - Complexity levels - Low/ Medioum/ High/ Very High  
