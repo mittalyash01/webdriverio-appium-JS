@@ -225,7 +225,7 @@ The UFTM Security Token is shared by the vendor and one can also setup Oauth tok
 1. Faster and smoother executions
 2. Good features such as reserve device, OAuth authentication
 3. Limited parallel execution capability
-4. Able to use the same script for both Android and iOS testing with minor tweaks
+4. Able to use the same script for both Android and iOS
  
 ##### Shortcoming 
     
