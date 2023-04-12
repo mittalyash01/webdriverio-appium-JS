@@ -1,4 +1,4 @@
-name: CI saucelabs
+name: CI uftm
 on: 
   workflow_dispatch:
     inputs:
