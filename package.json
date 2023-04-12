@@ -11,6 +11,8 @@
     "test:perfecto:ios": "wdio config/perfecto/perfecto.ios.conf.js",
     "test:browserstack:android": "wdio config/browserstack/browserstack.android.conf.js",
     "test:browserstack:ios": "wdio config/browserstack/browserstack.ios.conf.js",
+    "test:uftm:ios": "wdio config/uftm/uftm.ios.conf.js",
+    "test:uftm:android": "wdio config/uftm/uftm.android.conf.js",
     "report": "./node_modules/.bin/allure serve"
   },
   "keywords": [
