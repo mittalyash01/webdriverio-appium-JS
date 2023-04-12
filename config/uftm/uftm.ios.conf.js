@@ -1,13 +1,13 @@
 const path = require('path');
 const { config } = require('../wdio.shared.conf');
-const username = '';
-const password= '' ;
+const userName = '';
+const password= '';
 const host= 'uftm-accenture';
 
 config.protocol = 'https';
 config.hostname = (host + '.saas.microfocus.com');
 config.path = '/wd/hub';
-//config.port = 80;
+config.port = 443;
 
 config.specs = [
     path.join(process.cwd(), './test/specs/**/*.js')
@@ -19,14 +19,16 @@ config.specs = [
 // ============
 config.capabilities = [
     {
-        user: process.env.BROWSERSTACK_USERNAME || username,
-        key: process.env.BROWSERSTACK_ACCESS_KEY || password,
-        automationName: 'XCUITest',
-        platformName: 'iOS',
-        deviceName: process.env.npm_config_model || 'iPhone 13',
-        platformVersion: process.env.npm_config_osversion || '15.0.2',
-        bundleId: 'com.saucelabs.SwagLabsMobileApp',
-        browserName: '',
+    "uftm:userName": process.env.UFTM_USERNAME || userName,
+    "uftm:password": process.env.UFTM_ACCESS_KEY || password,
+    "uftm:tenantId": "999999999",
+    "appium:bundleId": 'com.saucelabs.SwagLabsMobileApp',
+    "appium:udid": "00008110-00146CA90E92801E",
+    "platformName": "iOS",
+    "uftm:source": "HOSTED",
+    "appium:deviceType": "real",
+    "uftm:installPackageApp": true,
+    "uftm:mcWorkspaceName": "Default workspace"
 
     }
 ]
