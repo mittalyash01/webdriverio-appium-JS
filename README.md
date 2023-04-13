@@ -40,7 +40,6 @@ This repository is setup as a part of Mobile Test automation hackathon to demons
             1. [Execute over CI](#Execute-in-CI)
 1. [Overall Summary](#overall-summary)
 1. [Metrics](#Metrics)
-1. [Cloud Service Providers list](#cloud-service-providers)
  
  ------------------------------------------------------------------------
 
