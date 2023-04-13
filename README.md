@@ -1,5 +1,13 @@
 ![Hackathon-Introduction](./docs/assets/Hackathon_bg3.jpg)
 
+# Cloud Service Providers list
+
+<a href="https://www.browserstack.com/"><img src="./docs/assets/BrowserStack_Logo_2.jpg" alt="browserstack" height = "60"/>
+<a href="https://saucelabs.com/"><img src="./docs/assets/saucelabs_icon.jpg" alt="saucelabs" height = "60"/>
+<a href="https://www.perfecto.io//"><img src="./docs/assets/perfecto_icon.jpg" alt="perfecto" height = "60"/>
+<a href="https://admhelp.microfocus.com/uftmobile/en/2023/Content/Intro.htm"><img src="./docs/assets/UFT_Logo.png" alt="uft" height = "60"/>
+<a href="https://aws.amazon.com/device-farm/"><img src="./docs/assets/aws_logo.jpg" alt="aws" height = "60"/>
+
 # Mobile Hackathon: Introduction
 This repository is setup as a part of Mobile Test automation hackathon to demonstrate the capabilities of [WebDriverIO](https://webdriver.io/) test automation framework. The team has setup WebDriverIO for mobile native app test automation with libraries/tools such as- [mocha](https://mochajs.org/) framework, [Appium](https://appium.io) for mobile automation, [Allure Reporter](https://webdriver.io/docs/allure-reporter/) for robust reporting. We also demonstrated and compared the capabilities of integrating this framework with cloud execution environments such as- [BrowserStack](https://www.browserstack.com/), [Saucelabs](https://saucelabs.com/), [Perfecto](https://www.perfecto.io/), [UFT Mobile](https://admhelp.microfocus.com/uftmobile/en/2023/Content/Intro.htm) and [AWS Device Farm](https://aws.amazon.com/device-farm/).
 
@@ -296,13 +304,5 @@ Below are few key metrics which we catured during our analysis on each tool comb
 <sup>2</sup> - Complexity levels - Low/ Medioum/ High/ Very High  
 <sup>3</sup> - % of test cases passed as compared to total number of executions  
 <sup>4</sup> - Native app or list the features not supported by the tool
-    
-## Cloud Service Providers list
-
-<a href="https://www.browserstack.com/"><img src="./docs/assets/BrowserStack_Logo_2.jpg" alt="browserstack" height = "60"/>
-<a href="https://saucelabs.com/"><img src="./docs/assets/saucelabs_icon.jpg" alt="saucelabs" height = "60"/>
-<a href="https://www.perfecto.io//"><img src="./docs/assets/perfecto_icon.jpg" alt="perfecto" height = "60"/>
-<a href="https://admhelp.microfocus.com/uftmobile/en/2023/Content/Intro.htm"><img src="./docs/assets/UFT_Logo.png" alt="uft" height = "60"/>
-<a href="https://aws.amazon.com/device-farm/"><img src="./docs/assets/aws_logo.jpg" alt="aws" height = "60"/>
 
 
