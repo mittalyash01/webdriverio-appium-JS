@@ -10,6 +10,7 @@ on:
         options:
         - android
         - ios
+        - both
       spec:
         type: choice
         default: all
@@ -21,19 +22,27 @@ on:
           - all
         description: 'Spec (no file extension needed)'
         required: false
-      device:
+      android_device:
         type: choice
         description: 'Device'
         required: false
         options:
-          - Samsung Galaxy S22
+          - Samsung Galaxy S22 Ultra
           - Samsung Galaxy Tab S6
           - Google Pixel 6 Pro
+      ios_device:
+        type: choice
+        description: 'Device'
+        required: false
+        options:
           - iPhone 14
           - iPhone 11
           - iPad 7th
-      os_version:
-        description: 'OS version'
+      ios_os_version:
+        description: 'iOS OS version'
+        required: false
+      android_os_version:
+        description: 'Android OS version'
         required: false
 
 permissions:
@@ -53,16 +62,22 @@ jobs:
         - name: Test
           run: |
             if [[ "${{ github.event.inputs.platform }}" == "android" ]]; then
-              if [ "${{ github.event.inputs.spec }}" != 'all'  ]; then
-                npm --device="${{ github.event.inputs.device }}" --osversion=${{ github.event.inputs.os_version }} run test:browserstack:android -- --spec=./test/specs/**/${{ github.event.inputs.spec }}.js 
+              if [ "${{ github.event.inputs.spec }}" != 'all' ]; then
+                npm --android_device="${{ github.event.inputs.android_device }}" --android_osversion=${{ github.event.inputs.android_os_version }} run test:browserstack:android -- --spec=./test/specs/**/${{ github.event.inputs.spec }}.js 
               else
-                npm --device="${{ github.event.inputs.device }}" --osversion=${{ github.event.inputs.os_version }} run test:browserstack:android
+                npm --android_device="${{ github.event.inputs.android_device }}" --android_osversion=${{ github.event.inputs.android_os_version }} run test:browserstack:android
+              fi
+            elif [[ "${{ github.event.inputs.platform }}" == "ios" ]]; then
+              if [ "${{ github.event.inputs.spec }}" != 'all' ]; then
+                npm --ios_device="${{ github.event.inputs.ios_device }}" --ios_osversion=${{ github.event.inputs.ios_os_version }} run test:browserstack:ios -- --spec=./test/specs/**/${{ github.event.inputs.spec }}.js 
+              else
+                npm --ios_device="${{ github.event.inputs.ios_device }}" --ios_osversion=${{ github.event.inputs.ios_os_version }} run test:browserstack:ios
               fi
             else
-              if [ "${{ github.event.inputs.spec }}" != 'all'  ]; then
-                npm --device="${{ github.event.inputs.device }}" --osversion=${{ github.event.inputs.os_version }} run test:browserstack:ios -- --spec=./test/specs/**/${{ github.event.inputs.spec }}.js 
+              if [ "${{ github.event.inputs.spec }}" != 'all' ]; then
+                npm --android_device="${{ github.event.inputs.android_device }}" --android_osversion=${{ github.event.inputs.android_os_version }} --ios_device="${{ github.event.inputs.ios_device }}" --ios_osversion=${{ github.event.inputs.ios_os_version }} run test:browserstack:parallel -- --spec=./test/specs/**/${{ github.event.inputs.spec }}.js 
               else
-                npm --device="${{ github.event.inputs.device }}" --osversion=${{ github.event.inputs.os_version }} run test:browserstack:ios
+                npm --android_device="${{ github.event.inputs.android_device }}" --android_osversion=${{ github.event.inputs.android_os_version }} --ios_device="${{ github.event.inputs.ios_device }}" --ios_osversion=${{ github.event.inputs.ios_os_version }} run test:browserstack:parallel
               fi
             fi
           env:

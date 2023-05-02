@@ -25,5 +25,4 @@ describe('Hackathon Scenario_4', () => {
     await expect(LoginScreen.usernameField ).toBeDisplayed();
     await expect(LoginScreen.passwordField).toBeDisplayed();
   });
-
 });
