@@ -1,1 +1,0 @@
-{"5fa5fc7d67c46a5a14df35db973cc360":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"87e94cd0dd114463","reportUrl":"https://mittalyash01.github.io/webdriverio-appium-team1/browserstack-results/34//#testresult/87e94cd0dd114463","status":"passed","time":{"start":1679433648153,"stop":1679433660751,"duration":12598}}]}}
