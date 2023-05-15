@@ -9,6 +9,11 @@ config.hostname = (host + '.saas.microfocus.com');
 config.path = '/wd/hub';
 config.port = 443;
 
+
+//
+// ============
+// Specs
+// ============
 config.specs = [
     path.join(process.cwd(), './test/specs/**/*.js')
 ];

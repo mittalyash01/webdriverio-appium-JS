@@ -18,7 +18,7 @@ on:
           - 2_LOGIN_locked_out_user.spec
           - 3_LOGIN_invalid_user.spec
           - 4_PRODUCT_onesie.spec
-          - all
+          - all test
         description: 'Spec (no file extension needed)'
         required: false
       device:
