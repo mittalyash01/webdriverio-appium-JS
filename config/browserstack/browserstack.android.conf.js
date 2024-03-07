@@ -3,6 +3,7 @@ const { config } = require('../wdio.shared.conf');
 const user= '';
 const key = '';
 
+config.hostname = ('hub.browserstack.com');
 //
 // ============
 // Specs
@@ -22,7 +23,7 @@ config.capabilities = [
     "platformName" : "android",
     "appium:platformVersion" : process.env.npm_config_osversion || "12.0",
     "appium:deviceName" : process.env.npm_config_device || "Samsung Galaxy S22 Ultra",
-    "appium:app" : "bs://eeb58d587be0810d5de10ec396de1662142f7057",
+    "appium:app" : "bs://417fb1291ea3a2ea3056507e05bb39169521e008",
   }
 ]
 
