@@ -1,4 +1,4 @@
-![Hackathon-Introduction](./docs/assets/Hackathon_bg3.jpg)
+![Introduction](./docs/assets/Hackathon_bg3.jpg)
 
 # Cloud Service Providers list
 
@@ -8,8 +8,8 @@
 <a href="https://admhelp.microfocus.com/uftmobile/en/2023/Content/Intro.htm"><img src="./docs/assets/UFT_Logo.png" alt="uft" height = "60"/>
 <a href="https://aws.amazon.com/device-farm/"><img src="./docs/assets/aws_logo.jpg" alt="aws" height = "60"/>
 
-# Mobile Hackathon: Introduction
-This repository is setup as a part of Mobile Test automation hackathon to demonstrate the capabilities of [WebDriverIO](https://webdriver.io/) test automation framework. The team has setup WebDriverIO for mobile native app test automation with libraries/tools such as- [mocha](https://mochajs.org/) framework, [Appium](https://appium.io) for mobile automation, [Allure Reporter](https://webdriver.io/docs/allure-reporter/) for robust reporting. We also demonstrated and compared the capabilities of integrating this framework with cloud execution environments such as- [BrowserStack](https://www.browserstack.com/), [Saucelabs](https://saucelabs.com/), [Perfecto](https://www.perfecto.io/), [UFT Mobile](https://admhelp.microfocus.com/uftmobile/en/2023/Content/Intro.htm) and [AWS Device Farm](https://aws.amazon.com/device-farm/).
+# Mobile Automation Framework: Introduction
+This repository is setup as a part of Accenture QE Practice to demonstrate the capabilities of [WebDriverIO](https://webdriver.io/) test automation framework. The team has setup WebDriverIO for mobile native app test automation with following libraries/tools- [mocha](https://mochajs.org/) framework, [Appium](https://appium.io) for mobile automation, [Allure Reporter](https://webdriver.io/docs/allure-reporter/) for robust reporting. We also demonstrated and compared the capabilities of integrating this framework with cloud execution environments such as- [BrowserStack](https://www.browserstack.com/), [Saucelabs](https://saucelabs.com/), [Perfecto](https://www.perfecto.io/), [UFT Mobile](https://admhelp.microfocus.com/uftmobile/en/2023/Content/Intro.htm) and [AWS Device Farm](https://aws.amazon.com/device-farm/).
 
 ## Table of contents
 1. [Getting Started](#getting-started)
