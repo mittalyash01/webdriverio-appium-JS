@@ -3,6 +3,7 @@ const { config } = require('../wdio.shared.conf');
 const user= '';
 const key = '';
 
+config.hostname = ('hub.browserstack.com');
 //
 // ============
 // Specs
@@ -22,7 +23,7 @@ config.capabilities = [
     "platformName" : "ios",
     "appium:platformVersion" : process.env.npm_config_osversion || "16.0",
     "appium:deviceName" : process.env.npm_config_device || "iPhone 14",
-    "appium:app" : "bs://e5bb603500754df9402c2bcd7db4f5bd7d79a81b",
+    "appium:app" : "bs://a1690252a4c52caecf31d93468202bbd2cf52768",
   }
 ]
 
