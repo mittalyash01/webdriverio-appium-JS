@@ -1,7 +1,7 @@
 const path = require('path');
 const { config } = require('../wdio.shared.conf');
-const user= '';
-const key = '';
+const user= 'oauth-mittal.yashshvi-6b12b';
+const key = '74ca5a86-1fe5-43bb-ab76-26e8e97d9323';
 
 //
 // ============
@@ -21,7 +21,7 @@ config.capabilities = [
     key: process.env.SAUCELABS_ACCESS_KEY || key,
     platformName: 'iOS',
     'appium:app': 'storage:filename=iOS.RealDevice.SauceLabs.Mobile.Sample.app.2.7.1.ipa',
-    "appium:platformVersion" : process.env.npm_config_osversion || '15.7',
+    "appium:platformVersion" : process.env.npm_config_osversion || '16.7',
     'appium:deviceName': process.env.npm_config_device || 'iPhone 12',
     'appium:automationName': 'XCUITest',
     'sauce:options': {
