@@ -12,7 +12,7 @@ jobs:
         - name: Install
           run: npm install
         - name: Test
-          run: npm run test --spec test/specs/login.spec.js
+          run: npm run test --spec test/specs/login1.spec.js
         - uses: actions/upload-artifact@v1
           if: failure()
           with:
