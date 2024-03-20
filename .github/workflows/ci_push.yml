@@ -1,4 +1,4 @@
-name: CI Local
+name: CI Push
 on: [push]
 
 permissions:
