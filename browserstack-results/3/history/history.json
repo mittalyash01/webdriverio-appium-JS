@@ -1,1 +1,0 @@
-{"8b9e6b5ecd23982f2d1bfde8c0bfe6c7":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"fcd356b21076fdf6","reportUrl":"https://mittalyash01.github.io/webdriverio-appium-JS/browserstack-results/3//#testresult/fcd356b21076fdf6","status":"passed","time":{"start":1710908649963,"stop":1710908662048,"duration":12085}}]}}
