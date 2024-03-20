@@ -21,7 +21,7 @@ config.capabilities = [
     key: process.env.SAUCELABS_ACCESS_KEY || key,
     platformName: 'iOS',
     'appium:app': 'storage:filename=iOS.RealDevice.SauceLabs.Mobile.Sample.app.2.7.1.ipa',
-    "appium:platformVersion" : process.env.npm_config_osversion || '15.7',
+    "appium:platformVersion" : process.env.npm_config_osversion || '16.7',
     'appium:deviceName': process.env.npm_config_device || 'iPhone 12',
     'appium:automationName': 'XCUITest',
     'sauce:options': {
