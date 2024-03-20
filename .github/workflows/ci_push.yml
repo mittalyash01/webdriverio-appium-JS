@@ -16,20 +16,7 @@ jobs:
           - name: Install
             run: npm install
           - name: Test
-            run: |
-              if [[ "${{ github.event.inputs.platform }}" == "android" ]]; then
-                if [ "${{ github.event.inputs.spec }}" != 'all'  ]; then
-                  npm --device="${{ github.event.inputs.device }}" --osversion=${{ github.event.inputs.os_version }} run test:browserstack:android -- --spec=./test/specs/**/${{ github.event.inputs.spec }}.js 
-                else
-                  npm --device="${{ github.event.inputs.device }}" --osversion=${{ github.event.inputs.os_version }} run test:browserstack:android
-                fi
-              else
-                if [ "${{ github.event.inputs.spec }}" != 'all'  ]; then
-                  npm --device="${{ github.event.inputs.device }}" --osversion=${{ github.event.inputs.os_version }} run test:browserstack:ios -- --spec=./test/specs/**/${{ github.event.inputs.spec }}.js 
-                else
-                  npm --device="${{ github.event.inputs.device }}" --osversion=${{ github.event.inputs.os_version }} run test:browserstack:ios
-                fi
-              fi
+            run: npm run test:browserstack:ios -- --spec=test/specs/1_LOGIN_valid_user.spec.js
             env:
               BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
               BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
