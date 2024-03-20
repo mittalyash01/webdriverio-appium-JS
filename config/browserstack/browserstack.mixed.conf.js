@@ -1,7 +1,7 @@
 const path = require('path');
 const { config } = require('../wdio.shared.conf');
-const user= 'yashshvimittal_dODRYg';
-const key = '4mxThL7TcWipJwJTfb3y';
+const user= '';
+const key = '';
 
 config.hostname = ('hub.browserstack.com');
 //
