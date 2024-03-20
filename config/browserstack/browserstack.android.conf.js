@@ -4,6 +4,7 @@ const user= 'yashshvimittal_dODRYg';
 const key = '4mxThL7TcWipJwJTfb3y';
 
 config.hostname = ('hub.browserstack.com');
+config.hostname = ('hub.browserstack.com');
 //
 // ============
 // Specs
