@@ -1,7 +1,7 @@
 const path = require('path');
 const { config } = require('../wdio.shared.conf');
-const user= 'oauth-mittal.yashshvi-6b12b';
-const key = '74ca5a86-1fe5-43bb-ab76-26e8e97d9323';
+const user= '';
+const key = '';
 
 //
 // ============
