@@ -35,7 +35,6 @@ jobs:
             with:
               name: allure-results
               path: allure-results
-              retention-days: 10
   
           - name: Get Allure history
             uses: actions/checkout@v2
