@@ -44,6 +44,7 @@ This repository is setup as a part of Accenture QE Practice to demonstrate the c
  ------------------------------------------------------------------------
 
  ## Framework Architecture
+ 
  The architecture diagram explain how the automation script interacts with Appium and then with mobile /devices (local, emulator/simulator or cloud device farm)
  
 <img src="./docs/assets/Appium_device architecture.png" alt="appium_device_architecture_conf" height = "260"/>
