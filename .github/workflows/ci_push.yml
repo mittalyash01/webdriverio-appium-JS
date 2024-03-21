@@ -1,4 +1,4 @@
-name: CI Push Test
+name: CI Push
 on: [push]
 
 permissions:
