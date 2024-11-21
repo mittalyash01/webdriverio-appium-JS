@@ -74,8 +74,8 @@ Your machine should have below minimum configurations:
 ### Supported testing types and platforms
 - [x] Mobile app on Android
 - [x] Mobile app on iOS
-- [ ] Web app on Android
-- [ ] Web app on iOS
+- [x] Web app on Android
+- [x] Web app on iOS
 
 ### Installation and Local setup
 Clone the repository and install the below required packages and drivers through Node JS
