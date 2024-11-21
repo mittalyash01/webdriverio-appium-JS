@@ -72,8 +72,8 @@ Your machine should have below minimum configurations:
 * Hard Disk: 10 GB free space
 
 ### Supported testing types and platforms
-- [x] Mobile app on Android
-- [x] Mobile app on iOS
+- [x] Mobile native app on Android
+- [x] Mobile native app on iOS
 - [x] Web app on Android
 - [x] Web app on iOS
 
